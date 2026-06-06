@@ -1,2 +1,13 @@
 [2026-06-05 22:30:58] Nessun container attivo
 [2026-06-05 22:30:58] Riavvio inspiring_boyd...
+[2026-06-06 23:34:35] homeassistant: 
+running
+[2026-06-06 23:34:35] nodered: healthy
+[2026-06-06 23:34:35] traefik: 
+running
+[2026-06-06 23:34:35] mosquitto: 
+running
+[2026-06-06 23:34:35] influxdb: 
+running
+[2026-06-06 23:34:35] grafana: 
+running
