@@ -1,0 +1,97 @@
+services:
+
+  traefik:
+    image: traefik:v3.0
+    container_name: traefik
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /opt/chaos/config/traefik:/etc/traefik
+    networks:
+      - chaos_net
+
+  homeassistant:
+    image: ghcr.io/home-assistant/home-assistant:stable
+    container_name: homeassistant
+    restart: unless-stopped
+    privileged: true
+    volumes:
+      - /opt/chaos/data/homeassistant:/config
+    environment:
+      - TZ=Europe/Rome
+    networks:
+      - chaos_net
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.hass.rule=Host(`ha.chaos.home`)"
+      - "traefik.http.services.hass.loadbalancer.server.port=8123"
+
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: mosquitto
+    restart: unless-stopped
+    volumes:
+      - /opt/chaos/config/mosquitto:/mosquitto/config
+      - /opt/chaos/data/mosquitto:/mosquitto/data
+      - /opt/chaos/logs/mosquitto:/mosquitto/log
+    ports:
+      - "1883:1883"
+    networks:
+      - chaos_net
+
+  influxdb:
+    image: influxdb:2.7
+    container_name: influxdb
+    restart: unless-stopped
+    volumes:
+      - /opt/chaos/data/influxdb:/var/lib/influxdb2
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_INIT_USERNAME=chaos
+      - DOCKER_INFLUXDB_INIT_PASSWORD=chaospassword
+      - DOCKER_INFLUXDB_INIT_ORG=chaos
+      - DOCKER_INFLUXDB_INIT_BUCKET=casa
+    networks:
+      - chaos_net
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.influx.rule=Host(`influx.chaos.home`)"
+      - "traefik.http.services.influx.loadbalancer.server.port=8086"
+
+  nodered:
+    image: nodered/node-red:latest
+    container_name: nodered
+    restart: unless-stopped
+    volumes:
+      - /opt/chaos/data/nodered:/data
+    environment:
+      - TZ=Europe/Rome
+    networks:
+      - chaos_net
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.nodered.rule=Host(`nodered.chaos.home`)"
+      - "traefik.http.services.nodered.loadbalancer.server.port=1880"
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    restart: unless-stopped
+    volumes:
+      - /opt/chaos/data/grafana:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=chaos
+      - GF_SECURITY_ADMIN_PASSWORD=chaospassword
+    networks:
+      - chaos_net
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.grafana.rule=Host(`grafana.chaos.home`)"
+      - "traefik.http.services.grafana.loadbalancer.server.port=3000"
+
+networks:
+  chaos_net:
+    driver: bridge
