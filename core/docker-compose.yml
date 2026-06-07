@@ -91,7 +91,89 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.grafana.rule=Host(`grafana.chaos.home`)"
       - "traefik.http.services.grafana.loadbalancer.server.port=3000"
+  neo4j:
+    image: neo4j:5.18
+    container_name: neo4j
+    restart: unless-stopped
+    environment:
+      - NEO4J_AUTH=neo4j/chaospassword
+      - NEO4J_PLUGINS=["apoc"]
+    volumes:
+      - /opt/chaos/data/neo4j/data:/data
+      - /opt/chaos/data/neo4j/logs:/logs
+      - /opt/chaos/data/neo4j/plugins:/plugins
+    networks:
+      - chaos_net
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.neo4j.rule=Host(`neo4j.chaos.home`)"
+      - "traefik.http.services.neo4j.loadbalancer.server.port=7474"    
+    ports:
+      - "7474:7474"
+      - "7687:7687"
 
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    restart: unless-stopped
+    volumes:
+      - /opt/chaos/data/ollama:/root/.ollama
+    networks:
+      - chaos_net
+    environment:
+      - OLLAMA_KEEP_ALIVE=-1
+
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n
+    restart: unless-stopped
+    environment:
+      - N8N_SECURE_COOKIE=false
+      - N8N_HOST=n8n.chaos.home
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=http://n8n.chaos.home
+      - TZ=Europe/Rome
+    volumes:
+      - /opt/chaos/data/n8n:/home/node/.n8n
+    networks:
+      - chaos_net
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.n8n.rule=Host(`n8n.chaos.home`)"
+      - "traefik.http.services.n8n.loadbalancer.server.port=5678"
+
+  vicky-ai:
+    build:
+      context: /opt/chaos/core/vicky
+      dockerfile: Dockerfile
+    container_name: vicky-ai
+    restart: unless-stopped
+    environment:
+      - HA_URL=http://homeassistant:8123
+      - HA_TOKEN=${HA_TOKEN}
+      - NEO4J_URI=bolt://neo4j:7687
+      - NEO4J_USER=neo4j
+      - NEO4J_PASSWORD=chaospassword
+      - INFLUXDB_URL=http://influxdb:8086
+      - INFLUXDB_TOKEN=${INFLUXDB_TOKEN}
+      - INFLUXDB_ORG=chaos
+      - INFLUXDB_BUCKET=casa
+      - OLLAMA_URL=http://ollama:11434
+      - OLLAMA_MODEL=llama3.2:1b
+    volumes:
+      - /opt/chaos/core/vicky:/app
+    networks:
+      - chaos_net
+    depends_on:
+      - neo4j
+      - ollama
+      - homeassistant
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.vicky.rule=Host(`vicky.chaos.home`)"
+      - "traefik.http.services.vicky.loadbalancer.server.port=8000"
+      
 networks:
   chaos_net:
     driver: bridge

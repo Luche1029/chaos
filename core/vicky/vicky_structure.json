@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "exported_at": "2026-05-07T14:34:10",
+    "description": "Casa test"
+  },
+  "areas": {
+    "casa": {
+      "aliases": [],
+      "contains": {
+        "Ingresso": {
+          "aliases": [],
+          "contains": {},
+          "devices": {
+              "luce ingresso": {
+                "archetype": "luce_semplice",
+                "ha_entity_id": "light.entrance_light",
+                "aliases": []
+              },
+              "termostato ingresso": {
+                "archetype": "termostato",
+                "ha_entity_id": "climate.entrance_thermostat",
+                "aliases": []
+              },
+                "sensore ingresso": {
+                  "archetype": "sensore_movimento",
+                  "ha_entity_id": "binary_sensor.entrance_motion",
+                  "aliases": []
+                }
+          }
+        },
+        "Sala": {
+          "aliases": [],
+          "contains": {},
+          "devices": {
+            "luce sala": {
+              "archetype": "luce_rgb",
+              "ha_entity_id": "light.dinner_light",
+              "aliases": []
+            },
+            "termostato sala": {
+              "archetype": "termostato",
+              "ha_entity_id": "climate.living_room_thermostat",
+              "aliases": []
+          },
+            "sensore sala": {
+              "archetype": "sensore_movimento",
+              "ha_entity_id": "binary_sensor.living_room_motion",
+              "aliases": []
+            },
+             "tapparella sala": {
+              "archetype": "tapparella",
+              "ha_entity_id": "cover.living_room_blinds",
+              "aliases": []
+             }
+          }
+        },
+        "Cucina": {
+          "aliases": [],
+          "contains": {},
+          "devices": {
+            "luce cucina": {
+              "archetype": "luce_semplice",
+              "ha_entity_id": "light.kitchen_light",
+              "aliases": []
+            },
+            "termostato cucina": {
+              "archetype": "termostato",
+              "ha_entity_id": "climate.kitchen_thermostat",
+              "aliases": []
+            },
+             "sensore cucina": {
+              "archetype": "sensore_movimento",
+              "ha_entity_id": "binary_sensor.kitchen_motion",
+              "aliases": []
+             }
+          }
+        },
+        "Camera": {
+          "aliases": [],
+          "contains": {},
+          "devices": {
+            "luce camera": {
+              "archetype": "luce_rgb",
+              "ha_entity_id": "light.bedroom_light",
+              "aliases": []
+            },
+            "termostato camera": {
+              "archetype": "termostato",
+              "ha_entity_id": "climate.bedroom_thermostat",
+              "aliases": []
+            },
+            "sensore camera": {
+              "archetype": "sensore_movimento",
+              "ha_entity_id": "binary_sensor.bedroom_motion",
+              "aliases": []
+            }
+          }
+        },
+        "Cameretta": {
+          "aliases": [],
+          "contains": {},
+          "devices": {
+            "luce cameretta": {
+              "archetype": "luce_rgb",
+              "ha_entity_id": "light.kidsroom_light",
+              "aliases": []
+            },
+            "termostato cameretta": {
+              "archetype": "termostato",
+              "ha_entity_id": "climate.kidsroom_thermostat",
+              "aliases": []
+          },
+            "sensore cameretta": {
+              "archetype": "sensore_movimento",
+              "ha_entity_id": "binary_sensor.kidsroom_motion",
+              "aliases": []
+            },
+             "tapparella cameretta": {
+              "archetype": "tapparella",
+              "ha_entity_id": "cover.kidsroom_blinds",
+              "aliases": []
+             }
+          }
+        },
+        "Bagno": {
+          "aliases": [],
+          "contains": {},
+          "devices": {
+            "luce bagno": {
+              "archetype": "luce_semplice",
+              "ha_entity_id": "light.luce_bagno",
+              "aliases": []
+            },
+            "termostato bagno": {
+              "archetype": "termostato",
+              "ha_entity_id": "climate.bathroom_thermostat",
+              "aliases": []
+            },
+             "sensore bagno": {
+              "archetype": "sensore_movimento",
+              "ha_entity_id": "binary_sensor.bathroom_motion",
+              "aliases": []
+             },
+              "ventilazione bagno": {
+                "archetype": "condizionatore",
+                "ha_entity_id": "fan.bathroom_fan",
+                "aliases": []
+              },
+                "tapparella bagno": {
+                  "archetype": "tapparella",
+                  "ha_entity_id": "cover.bathroom_blinds",
+                  "aliases": []
+                }
+          }
+        },
+        "Balcone": {
+          "aliases": [],
+          "contains": {},
+          "devices": {
+            "luce balcone": {
+              "archetype": "luce_semplice",
+              "ha_entity_id": "light.balcony_light",
+              "aliases": []
+            },
+            "termostato balcone": {
+              "archetype": "termostato",
+              "ha_entity_id": "climate.balcony_thermostat",
+              "aliases": []
+            },
+             "sensore balcone": {
+              "archetype": "sensore_movimento",
+              "ha_entity_id": "binary_sensor.balcony_motion",
+              "aliases": []
+            }
+          }
+        }
+      },
+      "devices": {}
+    }
+  },
+  "unassigned": {},
+  "commands_aliases": {}
+}
