@@ -14,6 +14,7 @@ from router_local import call_local_router
 from nlp_engine import NLPEngine
 from query_engine import QueryEngine
 from feedback_engine import FeedbackEngine
+from pattern_engine import PatternEngine
 
 
 
@@ -50,6 +51,14 @@ feedback_engine = FeedbackEngine(
     influx_token=os.getenv("INFLUXDB_TOKEN", ""),
     influx_org=os.getenv("INFLUXDB_ORG", "chaos"),
     influx_bucket=os.getenv("INFLUXDB_BUCKET", "casa")
+)
+
+pattern_engine = PatternEngine(
+    influx_url=os.getenv("INFLUXDB_URL",    "http://influxdb:8086"),
+    influx_token=os.getenv("INFLUXDB_TOKEN", ""),
+    influx_org=os.getenv("INFLUXDB_ORG",    "chaos"),
+    source_bucket="casa",
+    rules_bucket="vicky_rules"
 )
 
 # ── Precaricamento indice al boot ─────────────────────────────────────────────
@@ -96,6 +105,17 @@ def process_feedback(req: FeedbackRequest):
     )
     nlp_engine.build_index()
     return result
+
+# ── pattern endpoint ──────────────────────────────────────────────────────────
+@app.post("/analyze-patterns")
+def analyze_patterns(days: int = 7):
+    result = pattern_engine.analyze(days=days)
+    return result
+
+@app.get("/rules")
+def get_rules():
+    """Mostra le regole apprese da Vicky."""
+    return {"rules": []}  # placeholder — implementeremo la lettura dopo
 
 @app.post("/rebuild-index")
 def rebuild_index():
