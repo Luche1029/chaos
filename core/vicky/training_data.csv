@@ -1,0 +1,746 @@
+frase,area,device,command
+fai accendi punto luce in sala,Sala,luce_rgb,accendi
+spengere punti luce in camera,Camera,luce_rgb,spegni
+far accendi climatizzatore del sala,Sala,termostato,accendi
+spengere climatizzatori in camera,Camera,termostato,spegni
+abbassare tenda del cameretta,Cameretta,tapparella,chiudi
+alzare tende da sole in sala,Sala,tapparella,apri
+spengi punto luce in camera,Camera,luce_rgb,spegni
+abbassa tenda in sala,Sala,tapparella,chiudi
+spengi climatizzatore del cucina,Cucina,termostato,spegni
+far accendi luce del balcone,Balcone,luce_semplice,accendi
+far accendi climatizzatore del camera,Camera,termostato,accendi
+abbassare tenda da sole del bagno,Bagno,tapparella,chiudi
+spegnere punti luce del balcone,Balcone,luce_semplice,spegni
+spengere climatizzatori del cameretta,Cameretta,termostato,spegni
+apri tenda da sole in bagno,Bagno,tapparella,apri
+spegni climatizzatori in cucina,Cucina,termostato,spegni
+accendi il condizionatore,Bagno,condizionatore,accendi
+apri tenda in bagno,Bagno,tapparella,apri
+fa' accendi climatizzatori in camera,Camera,termostato,accendi
+spegni climatizzatore del cucina,Cucina,termostato,spegni
+spegnere punti luce del camera,Camera,luce_rgb,spegni
+spengi climatizzatori in bagno,Bagno,condizionatore,spegni
+fare accendi punto luce in balcone,Balcone,luce_semplice,accendi
+spegni climatizzatori del sala,Sala,termostato,spegni
+spegnere climatizzatori in cameretta,Cameretta,termostato,spegni
+fai accendi punto luce del balcone,Balcone,luce_semplice,accendi
+far accendi climatizzatore in cucina,Cucina,termostato,accendi
+fare accendi luce del cucina,Cucina,luce_semplice,accendi
+alza tenda del bagno,Bagno,tapparella,apri
+fa' accendi luce del sala,Sala,luce_rgb,accendi
+chiudi la tapparella in bagno,Bagno,tapparella,chiudi
+spegnere clima del sala,Sala,termostato,spegni
+luci del soggiorno on,Sala,luce_rgb,accendi
+chiudere tenda da sole del sala,Sala,tapparella,chiudi
+spengi punti luce in cameretta,Cameretta,luce_rgb,spegni
+alza tenda del cameretta,Cameretta,tapparella,apri
+chiudi tende da sole del bagno,Bagno,tapparella,chiudi
+spegnere punti luce del cameretta,Cameretta,luce_rgb,spegni
+spegni punti luce del ingresso,Ingresso,luce_semplice,spegni
+chiudi tenda del bagno,Bagno,tapparella,chiudi
+spegnere luce in camera,Camera,luce_rgb,spegni
+spengere climatizzatore del cucina,Cucina,termostato,spegni
+fa' accendi punto luce del cameretta,Cameretta,luce_rgb,accendi
+spengi climatizzatori in cameretta,Cameretta,termostato,spegni
+spengi climatizzatore del camera,Camera,termostato,spegni
+apri tenda del bagno,Bagno,tapparella,apri
+fai accendi punti luce del cameretta,Cameretta,luce_rgb,accendi
+fare accendi climatizzatori del sala,Sala,termostato,accendi
+accendi la luce in camera,Camera,luce_rgb,accendi
+spegnere luce in ingresso,Ingresso,luce_semplice,spegni
+spegnere luce in cucina,Cucina,luce_semplice,spegni
+fare accendi punto luce in sala,Sala,luce_rgb,accendi
+fare accendi punto luce del balcone,Balcone,luce_semplice,accendi
+spegni clima in cameretta,Cameretta,termostato,spegni
+far accendi punti luce in cucina,Cucina,luce_semplice,accendi
+spegnere punti luce in camera,Camera,luce_rgb,spegni
+abbassa tende da sole in bagno,Bagno,tapparella,chiudi
+fai accendi climatizzatori del camera,Camera,termostato,accendi
+fare accendi climatizzatori in camera,Camera,termostato,accendi
+fa' accendi punto luce in ingresso,Ingresso,luce_semplice,accendi
+alza tende da sole in bagno,Bagno,tapparella,apri
+fa' accendi clima in camera,Camera,termostato,accendi
+far accendi punti luce del balcone,Balcone,luce_semplice,accendi
+fare accendi punti luce in bagno,Bagno,luce_semplice,accendi
+spegni climatizzatori del cameretta,Cameretta,termostato,spegni
+fare accendi punto luce del ingresso,Ingresso,luce_semplice,accendi
+fare accendi clima in bagno,Bagno,condizionatore,accendi
+spengi clima del cucina,Cucina,termostato,spegni
+spengi clima in bagno,Bagno,condizionatore,spegni
+fai accendi punti luce in cameretta,Cameretta,luce_rgb,accendi
+spengere punto luce del ingresso,Ingresso,luce_semplice,spegni
+spengi climatizzatore in cucina,Cucina,termostato,spegni
+spegni punti luce del cucina,Cucina,luce_semplice,spegni
+fai accendi luce del balcone,Balcone,luce_semplice,accendi
+fare accendi clima in cucina,Cucina,termostato,accendi
+accendi la luce ingresso,Ingresso,luce_semplice,accendi
+fa' accendi punti luce del cameretta,Cameretta,luce_rgb,accendi
+chiudi tende da sole in bagno,Bagno,tapparella,chiudi
+far accendi punto luce del ingresso,Ingresso,luce_semplice,accendi
+alza tende da sole del sala,Sala,tapparella,apri
+spegnere clima in camera,Camera,termostato,spegni
+fare accendi climatizzatori del camera,Camera,termostato,accendi
+spegni clima del bagno,Bagno,condizionatore,spegni
+spengere punto luce in balcone,Balcone,luce_semplice,spegni
+alza tenda del sala,Sala,tapparella,apri
+chiudi tenda del sala,Sala,tapparella,chiudi
+fa' accendi clima in cameretta,Cameretta,termostato,accendi
+fai accendi clima del bagno,Bagno,condizionatore,accendi
+spengere climatizzatori del sala,Sala,termostato,spegni
+aprire tenda del bagno,Bagno,tapparella,apri
+spegni luce in ingresso,Ingresso,luce_semplice,spegni
+alzare tende da sole del bagno,Bagno,tapparella,apri
+fai accendi punto luce in cucina,Cucina,luce_semplice,accendi
+spegnere clima del camera,Camera,termostato,spegni
+spegni climatizzatori del camera,Camera,termostato,spegni
+fare accendi punti luce in cameretta,Cameretta,luce_rgb,accendi
+spengi climatizzatori del cameretta,Cameretta,termostato,spegni
+spengi punti luce del sala,Sala,luce_rgb,spegni
+spegni clima del sala,Sala,termostato,spegni
+spegnere climatizzatore del camera,Camera,termostato,spegni
+fa' accendi climatizzatori del bagno,Bagno,condizionatore,accendi
+spegnere climatizzatori del cameretta,Cameretta,termostato,spegni
+accendi la luce balcone,Balcone,luce_semplice,accendi
+spegnere punto luce del bagno,Bagno,luce_semplice,spegni
+aprire tenda da sole in bagno,Bagno,tapparella,apri
+fare accendi punto luce del camera,Camera,luce_rgb,accendi
+spegnere punti luce del bagno,Bagno,luce_semplice,spegni
+spegnere climatizzatore del cameretta,Cameretta,termostato,spegni
+chiudere tenda da sole in bagno,Bagno,tapparella,chiudi
+spengi punti luce del cameretta,Cameretta,luce_rgb,spegni
+fa' accendi punto luce del bagno,Bagno,luce_semplice,accendi
+spegnere clima del cucina,Cucina,termostato,spegni
+fa' accendi luce in cameretta,Cameretta,luce_rgb,accendi
+abbassare tenda da sole del sala,Sala,tapparella,chiudi
+fa' accendi climatizzatore in sala,Sala,termostato,accendi
+fare accendi punto luce del bagno,Bagno,luce_semplice,accendi
+far accendi punto luce del cucina,Cucina,luce_semplice,accendi
+spengi climatizzatore del cameretta,Cameretta,termostato,spegni
+fai accendi climatizzatore in cameretta,Cameretta,termostato,accendi
+far accendi luce del camera,Camera,luce_rgb,accendi
+spengere climatizzatori in bagno,Bagno,condizionatore,spegni
+fare accendi climatizzatori in cameretta,Cameretta,termostato,accendi
+fare accendi luce in cameretta,Cameretta,luce_rgb,accendi
+fare accendi clima in sala,Sala,termostato,accendi
+alza tenda in cameretta,Cameretta,tapparella,apri
+fare accendi luce del ingresso,Ingresso,luce_semplice,accendi
+accendi la luce in sala,Sala,luce_rgb,accendi
+spegnere clima in cucina,Cucina,termostato,spegni
+alzare tenda in sala,Sala,tapparella,apri
+far accendi clima del cucina,Cucina,termostato,accendi
+far accendi climatizzatore in camera,Camera,termostato,accendi
+far accendi clima in cameretta,Cameretta,termostato,accendi
+fare accendi luce in ingresso,Ingresso,luce_semplice,accendi
+accendi la luce cucina,Cucina,luce_semplice,accendi
+fai accendi climatizzatore del cameretta,Cameretta,termostato,accendi
+alza tenda da sole del cameretta,Cameretta,tapparella,apri
+fare accendi climatizzatore in sala,Sala,termostato,accendi
+spegnere punto luce in camera,Camera,luce_rgb,spegni
+fai accendi punto luce in balcone,Balcone,luce_semplice,accendi
+fare accendi punto luce in camera,Camera,luce_rgb,accendi
+far accendi punti luce del cucina,Cucina,luce_semplice,accendi
+spegnere climatizzatore in sala,Sala,termostato,spegni
+chiudi tenda da sole in bagno,Bagno,tapparella,chiudi
+spegnere punto luce del balcone,Balcone,luce_semplice,spegni
+fai accendi punto luce del cucina,Cucina,luce_semplice,accendi
+fa' accendi climatizzatore del camera,Camera,termostato,accendi
+spengere clima in camera,Camera,termostato,spegni
+fare accendi punti luce del cucina,Cucina,luce_semplice,accendi
+fare accendi climatizzatore in bagno,Bagno,condizionatore,accendi
+fare accendi punto luce del cameretta,Cameretta,luce_rgb,accendi
+spegnere luce in sala,Sala,luce_rgb,spegni
+spengere clima in cucina,Cucina,termostato,spegni
+spengere punto luce in sala,Sala,luce_rgb,spegni
+spegnere luce del bagno,Bagno,luce_semplice,spegni
+fa' accendi punto luce del ingresso,Ingresso,luce_semplice,accendi
+spegni clima in sala,Sala,termostato,spegni
+spegni climatizzatore del camera,Camera,termostato,spegni
+fare accendi punti luce del balcone,Balcone,luce_semplice,accendi
+fai accendi climatizzatori in cucina,Cucina,termostato,accendi
+spegni climatizzatori in sala,Sala,termostato,spegni
+fare accendi punti luce del sala,Sala,luce_rgb,accendi
+aprire tenda in cameretta,Cameretta,tapparella,apri
+spegni la luce ingresso,Ingresso,luce_semplice,spegni
+alzare tenda in bagno,Bagno,tapparella,apri
+far accendi climatizzatore in sala,Sala,termostato,accendi
+abbassa tende da sole del cameretta,Cameretta,tapparella,chiudi
+far accendi climatizzatore del cucina,Cucina,termostato,accendi
+spengi climatizzatore in camera,Camera,termostato,spegni
+spegni climatizzatore del sala,Sala,termostato,spegni
+far accendi climatizzatori del cameretta,Cameretta,termostato,accendi
+fare accendi clima in cameretta,Cameretta,termostato,accendi
+spengere punto luce del cameretta,Cameretta,luce_rgb,spegni
+spegni climatizzatori in camera,Camera,termostato,spegni
+far accendi climatizzatori in cucina,Cucina,termostato,accendi
+alzare tenda da sole del sala,Sala,tapparella,apri
+fa' accendi climatizzatori del camera,Camera,termostato,accendi
+spengi punto luce in bagno,Bagno,luce_semplice,spegni
+aprire tenda in bagno,Bagno,tapparella,apri
+fare accendi luce del camera,Camera,luce_rgb,accendi
+spengi climatizzatore del sala,Sala,termostato,spegni
+far accendi luce in cameretta,Cameretta,luce_rgb,accendi
+spegni la luce cucina,Cucina,luce_semplice,spegni
+spegni luce del bagno,Bagno,luce_semplice,spegni
+spegnere punti luce in cucina,Cucina,luce_semplice,spegni
+spengere luce in balcone,Balcone,luce_semplice,spegni
+spengere climatizzatori del camera,Camera,termostato,spegni
+fai accendi climatizzatori in camera,Camera,termostato,accendi
+spegni climatizzatore in bagno,Bagno,condizionatore,spegni
+fa' accendi punto luce del balcone,Balcone,luce_semplice,accendi
+alza tende da sole del bagno,Bagno,tapparella,apri
+spengi punti luce in camera,Camera,luce_rgb,spegni
+spengi luce del ingresso,Ingresso,luce_semplice,spegni
+chiudere tenda da sole del cameretta,Cameretta,tapparella,chiudi
+fare accendi climatizzatori in bagno,Bagno,condizionatore,accendi
+aprire tende da sole in cameretta,Cameretta,tapparella,apri
+spegni punti luce in camera,Camera,luce_rgb,spegni
+apri tenda da sole del cameretta,Cameretta,tapparella,apri
+far accendi punti luce in bagno,Bagno,luce_semplice,accendi
+abbassa tenda da sole del bagno,Bagno,tapparella,chiudi
+fare accendi clima in camera,Camera,termostato,accendi
+spegnere punti luce del ingresso,Ingresso,luce_semplice,spegni
+fare accendi punto luce in ingresso,Ingresso,luce_semplice,accendi
+spegni punti luce del camera,Camera,luce_rgb,spegni
+fare accendi clima del bagno,Bagno,condizionatore,accendi
+spengi climatizzatori del bagno,Bagno,condizionatore,spegni
+spengi punti luce del ingresso,Ingresso,luce_semplice,spegni
+fare accendi climatizzatore in camera,Camera,termostato,accendi
+spengi climatizzatori del camera,Camera,termostato,spegni
+apri tenda da sole in cameretta,Cameretta,tapparella,apri
+spegni luce in balcone,Balcone,luce_semplice,spegni
+fai accendi punti luce del cucina,Cucina,luce_semplice,accendi
+spengi climatizzatore del bagno,Bagno,condizionatore,spegni
+spegni luce del cucina,Cucina,luce_semplice,spegni
+chiudere tenda in sala,Sala,tapparella,chiudi
+fa' accendi punti luce in sala,Sala,luce_rgb,accendi
+fa' accendi luce in cucina,Cucina,luce_semplice,accendi
+chiudere tenda in bagno,Bagno,tapparella,chiudi
+alzare tenda in cameretta,Cameretta,tapparella,apri
+far accendi clima del camera,Camera,termostato,accendi
+alzare tenda da sole in bagno,Bagno,tapparella,apri
+fai accendi punto luce in bagno,Bagno,luce_semplice,accendi
+fai accendi luce del cucina,Cucina,luce_semplice,accendi
+fai accendi punti luce del balcone,Balcone,luce_semplice,accendi
+fare accendi climatizzatore del bagno,Bagno,condizionatore,accendi
+spengi clima del cameretta,Cameretta,termostato,spegni
+spegnere punto luce del sala,Sala,luce_rgb,spegni
+spengi punti luce in cucina,Cucina,luce_semplice,spegni
+spegnere climatizzatori in bagno,Bagno,condizionatore,spegni
+chiudi tende da sole in sala,Sala,tapparella,chiudi
+far accendi luce in cucina,Cucina,luce_semplice,accendi
+spengi clima del sala,Sala,termostato,spegni
+spegnere punto luce del camera,Camera,luce_rgb,spegni
+spengere climatizzatori in cucina,Cucina,termostato,spegni
+spegnere climatizzatore in bagno,Bagno,condizionatore,spegni
+fai accendi luce in cameretta,Cameretta,luce_rgb,accendi
+fa' accendi climatizzatore del cucina,Cucina,termostato,accendi
+spengi luce del camera,Camera,luce_rgb,spegni
+fai accendi punto luce del camera,Camera,luce_rgb,accendi
+fare accendi luce in sala,Sala,luce_rgb,accendi
+fa' accendi climatizzatore del sala,Sala,termostato,accendi
+far accendi luce in sala,Sala,luce_rgb,accendi
+chiudere tende da sole in cameretta,Cameretta,tapparella,chiudi
+fa' accendi clima del cucina,Cucina,termostato,accendi
+fa' accendi punto luce del camera,Camera,luce_rgb,accendi
+fare accendi punto luce del sala,Sala,luce_rgb,accendi
+chiudere tende da sole del cameretta,Cameretta,tapparella,chiudi
+fai accendi clima in sala,Sala,termostato,accendi
+fai accendi punto luce del cameretta,Cameretta,luce_rgb,accendi
+far accendi climatizzatore del bagno,Bagno,condizionatore,accendi
+fai accendi punto luce in camera,Camera,luce_rgb,accendi
+abbassare tenda in bagno,Bagno,tapparella,chiudi
+spegni climatizzatore in sala,Sala,termostato,spegni
+spegni luce del ingresso,Ingresso,luce_semplice,spegni
+chiudi tenda da sole in sala,Sala,tapparella,chiudi
+spegnere clima del cameretta,Cameretta,termostato,spegni
+spegnere clima del bagno,Bagno,condizionatore,spegni
+spengere climatizzatori in sala,Sala,termostato,spegni
+spengere luce del sala,Sala,luce_rgb,spegni
+fa' accendi climatizzatore in cucina,Cucina,termostato,accendi
+spegni punti luce del balcone,Balcone,luce_semplice,spegni
+abbassa tende da sole del sala,Sala,tapparella,chiudi
+fa' accendi punti luce in cucina,Cucina,luce_semplice,accendi
+far accendi clima del sala,Sala,termostato,accendi
+fai accendi luce in camera,Camera,luce_rgb,accendi
+far accendi clima in sala,Sala,termostato,accendi
+fa' accendi luce del camera,Camera,luce_rgb,accendi
+spengi punti luce del bagno,Bagno,luce_semplice,spegni
+fai accendi luce in sala,Sala,luce_rgb,accendi
+fai accendi climatizzatore del cucina,Cucina,termostato,accendi
+fai accendi climatizzatori in cameretta,Cameretta,termostato,accendi
+far accendi clima del bagno,Bagno,condizionatore,accendi
+spegnere punto luce in cameretta,Cameretta,luce_rgb,spegni
+fai accendi punti luce del ingresso,Ingresso,luce_semplice,accendi
+spengere clima in cameretta,Cameretta,termostato,spegni
+spengi clima in camera,Camera,termostato,spegni
+alzare tenda da sole in sala,Sala,tapparella,apri
+abbassare tenda da sole del cameretta,Cameretta,tapparella,chiudi
+alzare tenda del cameretta,Cameretta,tapparella,apri
+fai accendi punti luce del sala,Sala,luce_rgb,accendi
+fai accendi punti luce in cucina,Cucina,luce_semplice,accendi
+fa' accendi punti luce del camera,Camera,luce_rgb,accendi
+alza tenda in sala,Sala,tapparella,apri
+spengi climatizzatori in cucina,Cucina,termostato,spegni
+spengi climatizzatore in bagno,Bagno,condizionatore,spegni
+abbassa tenda da sole del sala,Sala,tapparella,chiudi
+spegnere climatizzatori del sala,Sala,termostato,spegni
+fa' accendi climatizzatore del cameretta,Cameretta,termostato,accendi
+abbassa tenda del sala,Sala,tapparella,chiudi
+fa' accendi punto luce del sala,Sala,luce_rgb,accendi
+fare accendi clima del camera,Camera,termostato,accendi
+far accendi climatizzatori in sala,Sala,termostato,accendi
+far accendi luce del bagno,Bagno,luce_semplice,accendi
+spengere punto luce in cameretta,Cameretta,luce_rgb,spegni
+spengere punto luce del cucina,Cucina,luce_semplice,spegni
+spengi luce del balcone,Balcone,luce_semplice,spegni
+fai accendi clima in cameretta,Cameretta,termostato,accendi
+spengere punti luce del cucina,Cucina,luce_semplice,spegni
+fa' accendi punti luce del cucina,Cucina,luce_semplice,accendi
+far accendi punto luce del balcone,Balcone,luce_semplice,accendi
+spengi luce in cucina,Cucina,luce_semplice,spegni
+fai accendi climatizzatore del bagno,Bagno,condizionatore,accendi
+spengere punto luce in bagno,Bagno,luce_semplice,spegni
+spengi punti luce in ingresso,Ingresso,luce_semplice,spegni
+spengi clima in cameretta,Cameretta,termostato,spegni
+spegni punto luce in balcone,Balcone,luce_semplice,spegni
+far accendi punti luce in sala,Sala,luce_rgb,accendi
+spegnere luce del cucina,Cucina,luce_semplice,spegni
+dammi la luce in cucina,Cucina,luce_semplice,accendi
+fai accendi clima del sala,Sala,termostato,accendi
+fa' accendi punti luce in balcone,Balcone,luce_semplice,accendi
+spengere climatizzatore in cameretta,Cameretta,termostato,spegni
+far accendi climatizzatore del cameretta,Cameretta,termostato,accendi
+fa' accendi punto luce in bagno,Bagno,luce_semplice,accendi
+spegnere punti luce in ingresso,Ingresso,luce_semplice,spegni
+spegni luce in cameretta,Cameretta,luce_rgb,spegni
+far accendi punti luce del sala,Sala,luce_rgb,accendi
+spegnere luce del camera,Camera,luce_rgb,spegni
+aprire tenda del sala,Sala,tapparella,apri
+fai accendi punti luce in balcone,Balcone,luce_semplice,accendi
+aprire tenda da sole del bagno,Bagno,tapparella,apri
+apri la tapparella in cameretta,Cameretta,tapparella,apri
+spengere climatizzatore in bagno,Bagno,condizionatore,spegni
+fai accendi punto luce in cameretta,Cameretta,luce_rgb,accendi
+abbassa tende da sole del bagno,Bagno,tapparella,chiudi
+far accendi punto luce in bagno,Bagno,luce_semplice,accendi
+fare accendi climatizzatore del cucina,Cucina,termostato,accendi
+far accendi luce del ingresso,Ingresso,luce_semplice,accendi
+fai accendi clima del camera,Camera,termostato,accendi
+spegnere luce in cameretta,Cameretta,luce_rgb,spegni
+spengere clima in sala,Sala,termostato,spegni
+spengere punti luce in sala,Sala,luce_rgb,spegni
+fa' accendi clima in cucina,Cucina,termostato,accendi
+spengere luce in cameretta,Cameretta,luce_rgb,spegni
+spengi punto luce del camera,Camera,luce_rgb,spegni
+spegnere punti luce del sala,Sala,luce_rgb,spegni
+buio in sala,Sala,luce_rgb,spegni
+spegnere luce in bagno,Bagno,luce_semplice,spegni
+alzare tenda da sole in cameretta,Cameretta,tapparella,apri
+spegni climatizzatore in camera,Camera,termostato,spegni
+fai accendi punti luce in sala,Sala,luce_rgb,accendi
+spegni luce del sala,Sala,luce_rgb,spegni
+spengere punti luce del ingresso,Ingresso,luce_semplice,spegni
+fare accendi punti luce del camera,Camera,luce_rgb,accendi
+spegnere punti luce in bagno,Bagno,luce_semplice,spegni
+spegni punto luce in cameretta,Cameretta,luce_rgb,spegni
+spegnere punto luce del ingresso,Ingresso,luce_semplice,spegni
+fa' accendi punti luce del bagno,Bagno,luce_semplice,accendi
+spengi climatizzatori del cucina,Cucina,termostato,spegni
+spengere climatizzatore del camera,Camera,termostato,spegni
+fai accendi punto luce del ingresso,Ingresso,luce_semplice,accendi
+fa' accendi clima del bagno,Bagno,condizionatore,accendi
+alza tenda da sole in bagno,Bagno,tapparella,apri
+spengere punto luce del balcone,Balcone,luce_semplice,spegni
+fa' accendi luce del balcone,Balcone,luce_semplice,accendi
+spengi punto luce in cucina,Cucina,luce_semplice,spegni
+far accendi luce del sala,Sala,luce_rgb,accendi
+fa' accendi clima in bagno,Bagno,condizionatore,accendi
+far accendi punti luce in balcone,Balcone,luce_semplice,accendi
+far accendi luce del cameretta,Cameretta,luce_rgb,accendi
+spengere punti luce del sala,Sala,luce_rgb,spegni
+spegni punti luce in cameretta,Cameretta,luce_rgb,spegni
+spegnere luce in balcone,Balcone,luce_semplice,spegni
+fa' accendi punti luce in camera,Camera,luce_rgb,accendi
+spengere luce del balcone,Balcone,luce_semplice,spegni
+chiudi tenda da sole del bagno,Bagno,tapparella,chiudi
+spengere punto luce in ingresso,Ingresso,luce_semplice,spegni
+fare accendi punti luce del bagno,Bagno,luce_semplice,accendi
+abbassa la tapparella sala,Sala,tapparella,chiudi
+far accendi climatizzatori in cameretta,Cameretta,termostato,accendi
+fa' accendi luce in balcone,Balcone,luce_semplice,accendi
+alzare tenda da sole del cameretta,Cameretta,tapparella,apri
+spegni climatizzatore del cameretta,Cameretta,termostato,spegni
+fai accendi punti luce in camera,Camera,luce_rgb,accendi
+chiudi tenda in bagno,Bagno,tapparella,chiudi
+fare accendi punto luce del cucina,Cucina,luce_semplice,accendi
+spengi punto luce del cucina,Cucina,luce_semplice,spegni
+far accendi clima in camera,Camera,termostato,accendi
+fa' accendi climatizzatori del cucina,Cucina,termostato,accendi
+alzare tende da sole in cameretta,Cameretta,tapparella,apri
+abbassare tenda in sala,Sala,tapparella,chiudi
+alzare tende da sole del sala,Sala,tapparella,apri
+spengi punti luce del cucina,Cucina,luce_semplice,spegni
+abbassa tende da sole in cameretta,Cameretta,tapparella,chiudi
+metti il riscaldamento a 20,Sala,termostato,imposta_temperatura
+spegni punto luce del sala,Sala,luce_rgb,spegni
+spengi punti luce in balcone,Balcone,luce_semplice,spegni
+spengere punto luce in camera,Camera,luce_rgb,spegni
+fare accendi punti luce del cameretta,Cameretta,luce_rgb,accendi
+fai accendi climatizzatore del camera,Camera,termostato,accendi
+spengi punto luce in sala,Sala,luce_rgb,spegni
+abbassare tende da sole in sala,Sala,tapparella,chiudi
+fare accendi climatizzatore del camera,Camera,termostato,accendi
+spegni punti luce del sala,Sala,luce_rgb,spegni
+spengere punti luce in cucina,Cucina,luce_semplice,spegni
+far accendi punto luce in balcone,Balcone,luce_semplice,accendi
+apri tende da sole in sala,Sala,tapparella,apri
+chiudi tende da sole del sala,Sala,tapparella,chiudi
+imposta la temperatura a 21 gradi,Camera,termostato,imposta_temperatura
+far accendi climatizzatori del bagno,Bagno,condizionatore,accendi
+far accendi punto luce del cameretta,Cameretta,luce_rgb,accendi
+spengi climatizzatori in camera,Camera,termostato,spegni
+spegnere punto luce in cucina,Cucina,luce_semplice,spegni
+apri tende da sole in cameretta,Cameretta,tapparella,apri
+spegnere climatizzatori del camera,Camera,termostato,spegni
+alza tenda da sole del bagno,Bagno,tapparella,apri
+fare accendi punti luce in cucina,Cucina,luce_semplice,accendi
+spegnere punti luce in sala,Sala,luce_rgb,spegni
+fare accendi clima del sala,Sala,termostato,accendi
+spegni clima in camera,Camera,termostato,spegni
+far accendi punti luce del cameretta,Cameretta,luce_rgb,accendi
+apri tende da sole del sala,Sala,tapparella,apri
+spegni punto luce del balcone,Balcone,luce_semplice,spegni
+spegni punti luce in balcone,Balcone,luce_semplice,spegni
+spegni clima in cucina,Cucina,termostato,spegni
+abbassa tenda in cameretta,Cameretta,tapparella,chiudi
+spegni luce in cucina,Cucina,luce_semplice,spegni
+spegni punto luce in ingresso,Ingresso,luce_semplice,spegni
+luce sala accendi,Sala,luce_rgb,accendi
+spegni climatizzatori del bagno,Bagno,condizionatore,spegni
+spegnere punto luce del cameretta,Cameretta,luce_rgb,spegni
+spegnere climatizzatori in cucina,Cucina,termostato,spegni
+spegni la luce in camera,Camera,luce_rgb,spegni
+spengere clima del cameretta,Cameretta,termostato,spegni
+fa' accendi climatizzatore in bagno,Bagno,condizionatore,accendi
+fai accendi climatizzatore in bagno,Bagno,condizionatore,accendi
+spengere punti luce del cameretta,Cameretta,luce_rgb,spegni
+spegni punto luce del camera,Camera,luce_rgb,spegni
+spengi luce in ingresso,Ingresso,luce_semplice,spegni
+fa' accendi punti luce del sala,Sala,luce_rgb,accendi
+spegnere climatizzatore del bagno,Bagno,condizionatore,spegni
+abbassa tenda da sole del cameretta,Cameretta,tapparella,chiudi
+fai accendi climatizzatore del sala,Sala,termostato,accendi
+spengi punti luce del camera,Camera,luce_rgb,spegni
+spegni punto luce in camera,Camera,luce_rgb,spegni
+fai accendi clima in camera,Camera,termostato,accendi
+spengere punti luce del camera,Camera,luce_rgb,spegni
+fare accendi clima del cucina,Cucina,termostato,accendi
+fai accendi luce del cameretta,Cameretta,luce_rgb,accendi
+fa' accendi clima in sala,Sala,termostato,accendi
+fai accendi climatizzatore in sala,Sala,termostato,accendi
+fare accendi climatizzatori in sala,Sala,termostato,accendi
+fai accendi climatizzatori del sala,Sala,termostato,accendi
+abbassa tenda in bagno,Bagno,tapparella,chiudi
+abbassare tende da sole del sala,Sala,tapparella,chiudi
+fai accendi punto luce del sala,Sala,luce_rgb,accendi
+abbassare tenda in cameretta,Cameretta,tapparella,chiudi
+fai accendi punti luce in bagno,Bagno,luce_semplice,accendi
+far accendi punto luce in cucina,Cucina,luce_semplice,accendi
+spegnere clima in sala,Sala,termostato,spegni
+spegni clima in bagno,Bagno,condizionatore,spegni
+spegnere climatizzatori in sala,Sala,termostato,spegni
+fare accendi luce del cameretta,Cameretta,luce_rgb,accendi
+far accendi climatizzatore in cameretta,Cameretta,termostato,accendi
+apri tenda del cameretta,Cameretta,tapparella,apri
+spengere punti luce in bagno,Bagno,luce_semplice,spegni
+fa' accendi climatizzatore in cameretta,Cameretta,termostato,accendi
+spengere climatizzatore del bagno,Bagno,condizionatore,spegni
+spegni punto luce del cucina,Cucina,luce_semplice,spegni
+fai accendi luce in ingresso,Ingresso,luce_semplice,accendi
+aprire tenda in sala,Sala,tapparella,apri
+spegnere clima in cameretta,Cameretta,termostato,spegni
+fai accendi climatizzatori del cameretta,Cameretta,termostato,accendi
+chiudere tende da sole in sala,Sala,tapparella,chiudi
+far accendi punti luce in camera,Camera,luce_rgb,accendi
+aprire tende da sole del bagno,Bagno,tapparella,apri
+far accendi punti luce in ingresso,Ingresso,luce_semplice,accendi
+spengi luce del cameretta,Cameretta,luce_rgb,spegni
+far accendi punti luce del bagno,Bagno,luce_semplice,accendi
+far accendi punto luce del bagno,Bagno,luce_semplice,accendi
+fare accendi punto luce in cucina,Cucina,luce_semplice,accendi
+spengere luce in camera,Camera,luce_rgb,spegni
+fa' accendi luce in ingresso,Ingresso,luce_semplice,accendi
+fai accendi punti luce del bagno,Bagno,luce_semplice,accendi
+alzare tende da sole del cameretta,Cameretta,tapparella,apri
+fai accendi luce del bagno,Bagno,luce_semplice,accendi
+apri tende da sole del bagno,Bagno,tapparella,apri
+fa' accendi climatizzatore in camera,Camera,termostato,accendi
+fai accendi climatizzatori del cucina,Cucina,termostato,accendi
+chiudere tenda da sole in cameretta,Cameretta,tapparella,chiudi
+spegnere punti luce in balcone,Balcone,luce_semplice,spegni
+chiudere tende da sole del bagno,Bagno,tapparella,chiudi
+fare accendi climatizzatori del cameretta,Cameretta,termostato,accendi
+spengere clima del sala,Sala,termostato,spegni
+fa' accendi climatizzatori in bagno,Bagno,condizionatore,accendi
+chiudere tenda del sala,Sala,tapparella,chiudi
+spegnere luce del sala,Sala,luce_rgb,spegni
+spegni clima del cucina,Cucina,termostato,spegni
+spegni climatizzatore del bagno,Bagno,condizionatore,spegni
+spengere punto luce del sala,Sala,luce_rgb,spegni
+fare accendi luce in camera,Camera,luce_rgb,accendi
+far accendi clima in cucina,Cucina,termostato,accendi
+alzare tenda del bagno,Bagno,tapparella,apri
+aprire tenda da sole in cameretta,Cameretta,tapparella,apri
+metti su le luci,,,accendi
+far accendi climatizzatori del sala,Sala,termostato,accendi
+spengi punto luce del ingresso,Ingresso,luce_semplice,spegni
+fai accendi clima del cucina,Cucina,termostato,accendi
+fa' accendi luce del cameretta,Cameretta,luce_rgb,accendi
+abbassare tenda del sala,Sala,tapparella,chiudi
+spegni punto luce in bagno,Bagno,luce_semplice,spegni
+spegni punti luce del cameretta,Cameretta,luce_rgb,spegni
+chiudi tende da sole del cameretta,Cameretta,tapparella,chiudi
+abbassa tenda da sole in cameretta,Cameretta,tapparella,chiudi
+spegni punti luce in cucina,Cucina,luce_semplice,spegni
+fa' accendi punti luce del ingresso,Ingresso,luce_semplice,accendi
+fa' accendi luce in sala,Sala,luce_rgb,accendi
+spegni il riscaldamento in cucina,Cucina,termostato,spegni
+abbassa tenda del bagno,Bagno,tapparella,chiudi
+apri tenda da sole del bagno,Bagno,tapparella,apri
+spegni climatizzatore in cucina,Cucina,termostato,spegni
+spengere punti luce in balcone,Balcone,luce_semplice,spegni
+fa' accendi punto luce del cucina,Cucina,luce_semplice,accendi
+far accendi punti luce in cameretta,Cameretta,luce_rgb,accendi
+far accendi punto luce in camera,Camera,luce_rgb,accendi
+spegnere luce del cameretta,Cameretta,luce_rgb,spegni
+spegni climatizzatori in cameretta,Cameretta,termostato,spegni
+fare accendi punto luce in bagno,Bagno,luce_semplice,accendi
+spegnere punti luce del cucina,Cucina,luce_semplice,spegni
+apri tenda da sole del sala,Sala,tapparella,apri
+fare accendi luce in bagno,Bagno,luce_semplice,accendi
+fai accendi punti luce del camera,Camera,luce_rgb,accendi
+fare accendi climatizzatori in cucina,Cucina,termostato,accendi
+fa' accendi climatizzatori in cameretta,Cameretta,termostato,accendi
+far accendi punti luce del ingresso,Ingresso,luce_semplice,accendi
+spengere climatizzatore in cucina,Cucina,termostato,spegni
+spengi punto luce in balcone,Balcone,luce_semplice,spegni
+fare accendi punti luce in sala,Sala,luce_rgb,accendi
+spegnere climatizzatore del sala,Sala,termostato,spegni
+fare accendi climatizzatore del sala,Sala,termostato,accendi
+fare accendi luce in balcone,Balcone,luce_semplice,accendi
+spegnere luce del balcone,Balcone,luce_semplice,spegni
+fare accendi luce in cucina,Cucina,luce_semplice,accendi
+spengere luce del cucina,Cucina,luce_semplice,spegni
+abbassare tende da sole del cameretta,Cameretta,tapparella,chiudi
+fa' accendi clima del cameretta,Cameretta,termostato,accendi
+spengere climatizzatore del sala,Sala,termostato,spegni
+far accendi climatizzatori in camera,Camera,termostato,accendi
+aprire tende da sole del sala,Sala,tapparella,apri
+abbassa tenda da sole in bagno,Bagno,tapparella,chiudi
+spengi punto luce del bagno,Bagno,luce_semplice,spegni
+spegni climatizzatore in cameretta,Cameretta,termostato,spegni
+chiudere tenda del bagno,Bagno,tapparella,chiudi
+far accendi luce in ingresso,Ingresso,luce_semplice,accendi
+fare accendi climatizzatore in cucina,Cucina,termostato,accendi
+spengere luce in sala,Sala,luce_rgb,spegni
+alza tende da sole del cameretta,Cameretta,tapparella,apri
+alzare tenda del sala,Sala,tapparella,apri
+fa' accendi punti luce in cameretta,Cameretta,luce_rgb,accendi
+aprire tende da sole del cameretta,Cameretta,tapparella,apri
+fa' accendi punto luce in camera,Camera,luce_rgb,accendi
+fai accendi climatizzatori in bagno,Bagno,condizionatore,accendi
+fai accendi clima in cucina,Cucina,termostato,accendi
+chiudi tenda da sole in cameretta,Cameretta,tapparella,chiudi
+spegni punto luce del ingresso,Ingresso,luce_semplice,spegni
+far accendi climatizzatori del camera,Camera,termostato,accendi
+abbassa tenda da sole in sala,Sala,tapparella,chiudi
+chiudi tenda in sala,Sala,tapparella,chiudi
+spengere climatizzatori del bagno,Bagno,condizionatore,spegni
+fare accendi climatizzatori del bagno,Bagno,condizionatore,accendi
+spegnere climatizzatore in camera,Camera,termostato,spegni
+fai accendi luce in balcone,Balcone,luce_semplice,accendi
+fai accendi luce del sala,Sala,luce_rgb,accendi
+fa' accendi climatizzatore del bagno,Bagno,condizionatore,accendi
+spengere punti luce del balcone,Balcone,luce_semplice,spegni
+spegnere clima in bagno,Bagno,condizionatore,spegni
+spegnere punto luce in bagno,Bagno,luce_semplice,spegni
+far accendi luce in balcone,Balcone,luce_semplice,accendi
+spengi punti luce in sala,Sala,luce_rgb,spegni
+spengere climatizzatore in camera,Camera,termostato,spegni
+far accendi luce in bagno,Bagno,luce_semplice,accendi
+spengere punti luce del bagno,Bagno,luce_semplice,spegni
+spengere clima del bagno,Bagno,condizionatore,spegni
+spengi luce del bagno,Bagno,luce_semplice,spegni
+abbassare tende da sole in bagno,Bagno,tapparella,chiudi
+spengere clima del cucina,Cucina,termostato,spegni
+spegni luce in camera,Camera,luce_rgb,spegni
+abbassare tenda da sole in cameretta,Cameretta,tapparella,chiudi
+spengi punti luce in bagno,Bagno,luce_semplice,spegni
+fa' accendi luce in bagno,Bagno,luce_semplice,accendi
+spengi luce del cucina,Cucina,luce_semplice,spegni
+spengi luce in cameretta,Cameretta,luce_rgb,spegni
+spegnere climatizzatori in camera,Camera,termostato,spegni
+fare accendi punti luce in balcone,Balcone,luce_semplice,accendi
+fa' accendi punti luce in bagno,Bagno,luce_semplice,accendi
+spegnere climatizzatori del cucina,Cucina,termostato,spegni
+chiudere tenda in cameretta,Cameretta,tapparella,chiudi
+fare accendi luce del balcone,Balcone,luce_semplice,accendi
+chiudi tenda in cameretta,Cameretta,tapparella,chiudi
+far accendi punto luce in sala,Sala,luce_rgb,accendi
+spegnere punto luce in ingresso,Ingresso,luce_semplice,spegni
+fare accendi punti luce del ingresso,Ingresso,luce_semplice,accendi
+spegnere climatizzatore in cucina,Cucina,termostato,spegni
+spengi clima del bagno,Bagno,condizionatore,spegni
+spegni luce in bagno,Bagno,luce_semplice,spegni
+chiudi tende da sole in cameretta,Cameretta,tapparella,chiudi
+spegnere punti luce in cameretta,Cameretta,luce_rgb,spegni
+aprire tende da sole in sala,Sala,tapparella,apri
+spegni punti luce in sala,Sala,luce_rgb,spegni
+fa' accendi climatizzatori in sala,Sala,termostato,accendi
+fare accendi clima del cameretta,Cameretta,termostato,accendi
+abbassare tenda del bagno,Bagno,tapparella,chiudi
+accendi la luce del bagno,Bagno,luce_semplice,accendi
+fare accendi punti luce in ingresso,Ingresso,luce_semplice,accendi
+spengi punti luce del balcone,Balcone,luce_semplice,spegni
+spegni la luce del bagno,Bagno,luce_semplice,spegni
+fare accendi punto luce in cameretta,Cameretta,luce_rgb,accendi
+abbassare tenda da sole in bagno,Bagno,tapparella,chiudi
+spengere clima in bagno,Bagno,condizionatore,spegni
+spengi clima in cucina,Cucina,termostato,spegni
+spengere luce del bagno,Bagno,luce_semplice,spegni
+spengi clima del camera,Camera,termostato,spegni
+spegni punti luce del bagno,Bagno,luce_semplice,spegni
+spengi punto luce in ingresso,Ingresso,luce_semplice,spegni
+aprire tenda da sole in sala,Sala,tapparella,apri
+spengi punto luce in cameretta,Cameretta,luce_rgb,spegni
+spengere punto luce del bagno,Bagno,luce_semplice,spegni
+alzare tende da sole in bagno,Bagno,tapparella,apri
+spengi luce in balcone,Balcone,luce_semplice,spegni
+spegni punti luce in bagno,Bagno,luce_semplice,spegni
+spegnere punto luce in sala,Sala,luce_rgb,spegni
+far accendi punto luce del sala,Sala,luce_rgb,accendi
+spengi luce in bagno,Bagno,luce_semplice,spegni
+spengere punti luce in cameretta,Cameretta,luce_rgb,spegni
+fa' accendi punto luce in cameretta,Cameretta,luce_rgb,accendi
+fa' accendi punto luce in balcone,Balcone,luce_semplice,accendi
+abbassare tende da sole in cameretta,Cameretta,tapparella,chiudi
+fai accendi clima del cameretta,Cameretta,termostato,accendi
+fai accendi punto luce in ingresso,Ingresso,luce_semplice,accendi
+spengere luce del camera,Camera,luce_rgb,spegni
+fare accendi luce del bagno,Bagno,luce_semplice,accendi
+spegni punto luce del bagno,Bagno,luce_semplice,spegni
+spegnere luce del ingresso,Ingresso,luce_semplice,spegni
+far accendi punti luce del camera,Camera,luce_rgb,accendi
+fare accendi punti luce in camera,Camera,luce_rgb,accendi
+fai accendi climatizzatori in sala,Sala,termostato,accendi
+apri tenda del sala,Sala,tapparella,apri
+fa' accendi punto luce in cucina,Cucina,luce_semplice,accendi
+abbassa tenda del cameretta,Cameretta,tapparella,chiudi
+spengi luce in sala,Sala,luce_rgb,spegni
+fa' accendi climatizzatori in cucina,Cucina,termostato,accendi
+chiudere tenda da sole del bagno,Bagno,tapparella,chiudi
+apri tenda in sala,Sala,tapparella,apri
+spegnere punto luce in balcone,Balcone,luce_semplice,spegni
+fare accendi climatizzatore del cameretta,Cameretta,termostato,accendi
+spegni luce del cameretta,Cameretta,luce_rgb,spegni
+abbassa tende da sole in sala,Sala,tapparella,chiudi
+spengere luce in bagno,Bagno,luce_semplice,spegni
+spengi punto luce del cameretta,Cameretta,luce_rgb,spegni
+spengi luce in camera,Camera,luce_rgb,spegni
+far accendi punto luce in cameretta,Cameretta,luce_rgb,accendi
+spegni luce del camera,Camera,luce_rgb,spegni
+fa' accendi luce del cucina,Cucina,luce_semplice,accendi
+alza tenda da sole del sala,Sala,tapparella,apri
+spengi luce del sala,Sala,luce_rgb,spegni
+fa' accendi climatizzatori del cameretta,Cameretta,termostato,accendi
+alza la tapparella sala,Sala,tapparella,apri
+spegnere punto luce del cucina,Cucina,luce_semplice,spegni
+fai accendi luce del ingresso,Ingresso,luce_semplice,accendi
+alza tenda in bagno,Bagno,tapparella,apri
+aprire tenda da sole del sala,Sala,tapparella,apri
+far accendi luce del cucina,Cucina,luce_semplice,accendi
+chiudere tende da sole in bagno,Bagno,tapparella,chiudi
+spegni punti luce in ingresso,Ingresso,luce_semplice,spegni
+chiudere tende da sole del sala,Sala,tapparella,chiudi
+fa' accendi punti luce del balcone,Balcone,luce_semplice,accendi
+spegni le luci in sala,Sala,luce_rgb,spegni
+fai accendi climatizzatore in cucina,Cucina,termostato,accendi
+chiudere tenda del cameretta,Cameretta,tapparella,chiudi
+fa' accendi punti luce in ingresso,Ingresso,luce_semplice,accendi
+spengere luce del ingresso,Ingresso,luce_semplice,spegni
+far accendi climatizzatore in bagno,Bagno,condizionatore,accendi
+spengi punto luce del balcone,Balcone,luce_semplice,spegni
+chiudere tenda da sole in sala,Sala,tapparella,chiudi
+spengi clima in sala,Sala,termostato,spegni
+fai accendi punto luce del bagno,Bagno,luce_semplice,accendi
+spengere punto luce del camera,Camera,luce_rgb,spegni
+spengi climatizzatore in cameretta,Cameretta,termostato,spegni
+spengere climatizzatori in cameretta,Cameretta,termostato,spegni
+alza tenda da sole in sala,Sala,tapparella,apri
+chiudi tenda da sole del cameretta,Cameretta,tapparella,chiudi
+fa' accendi luce del bagno,Bagno,luce_semplice,accendi
+fa' accendi clima del sala,Sala,termostato,accendi
+fare accendi climatizzatore in cameretta,Cameretta,termostato,accendi
+spengi climatizzatori del sala,Sala,termostato,spegni
+far accendi climatizzatori del cucina,Cucina,termostato,accendi
+spengere luce del cameretta,Cameretta,luce_rgb,spegni
+far accendi punto luce in ingresso,Ingresso,luce_semplice,accendi
+far accendi clima del cameretta,Cameretta,termostato,accendi
+alza tende da sole in sala,Sala,tapparella,apri
+apri tenda da sole in sala,Sala,tapparella,apri
+fare accendi climatizzatori del cucina,Cucina,termostato,accendi
+fa' accendi climatizzatori del sala,Sala,termostato,accendi
+fa' accendi punto luce in sala,Sala,luce_rgb,accendi
+alza tenda da sole in cameretta,Cameretta,tapparella,apri
+spegnere climatizzatori del bagno,Bagno,condizionatore,spegni
+spengere luce in cucina,Cucina,luce_semplice,spegni
+abbassare tenda da sole in sala,Sala,tapparella,chiudi
+fai accendi luce in cucina,Cucina,luce_semplice,accendi
+spegni punto luce in sala,Sala,luce_rgb,spegni
+fai accendi climatizzatore in camera,Camera,termostato,accendi
+spegnere climatizzatore in cameretta,Cameretta,termostato,spegni
+spegni climatizzatori in bagno,Bagno,condizionatore,spegni
+aprire tende da sole in bagno,Bagno,tapparella,apri
+spengere climatizzatori del cucina,Cucina,termostato,spegni
+spegni punto luce in cucina,Cucina,luce_semplice,spegni
+spengi punto luce del sala,Sala,luce_rgb,spegni
+apri tende da sole in bagno,Bagno,tapparella,apri
+far accendi climatizzatori in bagno,Bagno,condizionatore,accendi
+fa' accendi clima del camera,Camera,termostato,accendi
+apri tende da sole del cameretta,Cameretta,tapparella,apri
+spengere clima del camera,Camera,termostato,spegni
+spengere punto luce in cucina,Cucina,luce_semplice,spegni
+spegnere climatizzatore del cucina,Cucina,termostato,spegni
+far accendi clima in bagno,Bagno,condizionatore,accendi
+spengere punti luce in ingresso,Ingresso,luce_semplice,spegni
+chiudi tenda del cameretta,Cameretta,tapparella,chiudi
+spengere climatizzatore del cameretta,Cameretta,termostato,spegni
+fa' accendi luce del ingresso,Ingresso,luce_semplice,accendi
+abbassare tende da sole del bagno,Bagno,tapparella,chiudi
+fai accendi climatizzatori del bagno,Bagno,condizionatore,accendi
+spegni luce in sala,Sala,luce_rgb,spegni
+spegni climatizzatori del cucina,Cucina,termostato,spegni
+fai accendi punti luce in ingresso,Ingresso,luce_semplice,accendi
+fai accendi luce in bagno,Bagno,luce_semplice,accendi
+aprire tenda del cameretta,Cameretta,tapparella,apri
+spegni clima del camera,Camera,termostato,spegni
+far accendi punto luce del camera,Camera,luce_rgb,accendi
+spengi climatizzatore in sala,Sala,termostato,spegni
+fai accendi clima in bagno,Bagno,condizionatore,accendi
+alza tende da sole in cameretta,Cameretta,tapparella,apri
+accendi la luce in cameretta,Cameretta,luce_rgb,accendi
+apri tenda in cameretta,Cameretta,tapparella,apri
+fai accendi luce del camera,Camera,luce_rgb,accendi
+aprire tenda da sole del cameretta,Cameretta,tapparella,apri
+spegni luce del balcone,Balcone,luce_semplice,spegni
+spegni punto luce del cameretta,Cameretta,luce_rgb,spegni
+spegni clima del cameretta,Cameretta,termostato,spegni
+far accendi luce in camera,Camera,luce_rgb,accendi
+chiudi tenda da sole del sala,Sala,tapparella,chiudi
+fare accendi luce del sala,Sala,luce_rgb,accendi
+alzare tenda da sole del bagno,Bagno,tapparella,apri
+fa' accendi luce in camera,Camera,luce_rgb,accendi
+spengere luce in ingresso,Ingresso,luce_semplice,spegni
+spengi climatizzatori in sala,Sala,termostato,spegni
+spengere climatizzatore in sala,Sala,termostato,spegni

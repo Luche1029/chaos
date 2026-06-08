@@ -1,0 +1,26 @@
+frase,area,device,command
+accendi la luce cucina,Cucina,luce_semplice,accendi
+spegni la luce cucina,Cucina,luce_semplice,spegni
+accendi la luce in sala,Sala,luce_rgb,accendi
+spegni le luci in sala,Sala,luce_rgb,spegni
+accendi la luce del bagno,Bagno,luce_semplice,accendi
+spegni la luce del bagno,Bagno,luce_semplice,spegni
+accendi la luce in camera,Camera,luce_rgb,accendi
+spegni la luce in camera,Camera,luce_rgb,spegni
+accendi la luce in cameretta,Cameretta,luce_rgb,accendi
+accendi la luce ingresso,Ingresso,luce_semplice,accendi
+spegni la luce ingresso,Ingresso,luce_semplice,spegni
+accendi la luce balcone,Balcone,luce_semplice,accendi
+metti su le luci,,,accendi
+abbassa la tapparella sala,Sala,tapparella,chiudi
+alza la tapparella sala,Sala,tapparella,apri
+chiudi la tapparella in bagno,Bagno,tapparella,chiudi
+apri la tapparella in cameretta,Cameretta,tapparella,apri
+imposta la temperatura a 21 gradi,Camera,termostato,imposta_temperatura
+metti il riscaldamento a 20,Sala,termostato,imposta_temperatura
+spegni il riscaldamento in cucina,Cucina,termostato,spegni
+accendi il condizionatore,Bagno,condizionatore,accendi
+luci del soggiorno on,Sala,luce_rgb,accendi
+luce sala accendi,Sala,luce_rgb,accendi
+dammi la luce in cucina,Cucina,luce_semplice,accendi
+buio in sala,Sala,luce_rgb,spegni
