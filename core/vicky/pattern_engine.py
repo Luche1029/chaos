@@ -134,7 +134,7 @@ class PatternEngine:
                 "id":           f"habit_{device.replace('.','_')}_{state}_{hour}h_{weekday}",
                 "tipo":         "abitudine",
                 "trigger":      f"orario:{hour:02d}:00, giorno:{days_map[weekday]}",
-                "azione":       f"{state} {device}",
+                "azione": f"{'on' if state in ('on','morning','evening') else 'off'} {device}",
                 "device":       device,
                 "stato":        state,
                 "ora":          hour,

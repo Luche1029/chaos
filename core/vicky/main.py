@@ -113,9 +113,46 @@ def analyze_patterns(days: int = 7):
     return result
 
 @app.get("/rules")
-def get_rules():
-    """Mostra le regole apprese da Vicky."""
-    return {"rules": []}  # placeholder — implementeremo la lettura dopo
+def get_rules(min_confidence: float = 0.5, active_only: bool = True):
+    """Restituisce le regole apprese da Vicky dal bucket vicky_rules."""
+    try:
+        from influxdb_client import InfluxDBClient
+        client = InfluxDBClient(
+            url=os.getenv("INFLUXDB_URL", "http://influxdb:8086"),
+            token=os.getenv("INFLUXDB_TOKEN", ""),
+            org=os.getenv("INFLUXDB_ORG", "chaos")
+        )
+        query_api = client.query_api()
+
+        query = f'''
+        from(bucket: "vicky_rules")
+          |> range(start: -30d)
+          |> filter(fn: (r) => r._measurement == "vicky_rules")
+          |> filter(fn: (r) => r._field == "rule_json")
+          |> last()
+        '''
+
+        tables = query_api.query(query, org=os.getenv("INFLUXDB_ORG", "chaos"))
+        rules = []
+        for table in tables:
+            for record in table.records:
+                try:
+                    import json
+                    rule = json.loads(record.get_value())
+                    if rule.get("confidenza", 0) >= min_confidence:
+                        if not active_only or rule.get("attiva", False):
+                            rules.append(rule)
+                except:
+                    pass
+
+        client.close()
+
+        # Ordina per confidenza
+        rules.sort(key=lambda x: x.get("confidenza", 0), reverse=True)
+        return {"rules": rules, "total": len(rules)}
+
+    except Exception as e:
+        return {"rules": [], "total": 0, "error": str(e)}
 
 @app.post("/rebuild-index")
 def rebuild_index():
