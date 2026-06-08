@@ -96,7 +96,7 @@ def process_feedback(req: FeedbackRequest):
     )
     nlp_engine.build_index()
     return result
-    
+
 @app.post("/rebuild-index")
 def rebuild_index():
     """Forza la ricostruzione dell'indice NLP."""
@@ -225,14 +225,20 @@ def _resolve_by_ids(area_id: str | None, device_id: str | None, command_id: str 
                 rows = list(s.run("""
                     MATCH (d:Device)-[:INSTANCE_OF]->(:Archetype {id: $arch})
                     MATCH (d)-[:BELONGS]->(:Area {id: $area})
-                    MATCH (d)-[:HAS_COMMAND]->(c:Command {id: $cmd})
+                    MATCH (d)-[:HAS_COMMAND]->(c:Command)
+                    MATCH (c)-[:HAS_ALIAS]->(a:Alias {value: $cmd})
+                    WHERE c.ha_service_key STARTS WITH split(d.ha_entity_id, '.')[0]
                     RETURN d.ha_entity_id as eid, c.ha_service_key as svc
+                    LIMIT 1
                 """, arch=device_id, area=area_id, cmd=command_id))
             elif device_id and command_id:
                 rows = list(s.run("""
                     MATCH (d:Device)-[:INSTANCE_OF]->(:Archetype {id: $arch})
-                    MATCH (d)-[:HAS_COMMAND]->(c:Command {id: $cmd})
+                    MATCH (d)-[:HAS_COMMAND]->(c:Command)
+                    MATCH (c)-[:HAS_ALIAS]->(a:Alias {value: $cmd})
+                    WHERE c.ha_service_key STARTS WITH split(d.ha_entity_id, '.')[0]
                     RETURN d.ha_entity_id as eid, c.ha_service_key as svc
+                    LIMIT 1
                 """, arch=device_id, cmd=command_id))
             elif device_id:
                 rows = list(s.run("""
