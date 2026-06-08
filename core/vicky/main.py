@@ -13,6 +13,9 @@ from neo4j import GraphDatabase
 from router_local import call_local_router
 from nlp_engine import NLPEngine
 from query_engine import QueryEngine
+from feedback_engine import FeedbackEngine
+
+
 
 app = FastAPI(title="Vicky AI", version="1.0.0")
 
@@ -39,6 +42,16 @@ db           = Neo4jManager(NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD)
 query_engine = QueryEngine(db)
 nlp_engine   = NLPEngine(db, common_yaml_path="_common.yaml")
 
+feedback_engine = FeedbackEngine(
+    neo4j_uri=NEO4J_URI,
+    neo4j_user=NEO4J_USER,
+    neo4j_password=NEO4J_PASSWORD,
+    influx_url=os.getenv("INFLUXDB_URL", "http://influxdb:8086"),
+    influx_token=os.getenv("INFLUXDB_TOKEN", ""),
+    influx_org=os.getenv("INFLUXDB_ORG", "chaos"),
+    influx_bucket=os.getenv("INFLUXDB_BUCKET", "casa")
+)
+
 # ── Precaricamento indice al boot ─────────────────────────────────────────────
 @app.on_event("startup")
 def startup_event():
@@ -63,6 +76,32 @@ class CommandResponse(BaseModel):
 @app.get("/health")
 def health():
     return {"status": "ok", "service": "vicky-ai"}
+
+class FeedbackRequest(BaseModel):
+    original_text:   str
+    correct_area:    Optional[str] = None
+    correct_device:  Optional[str] = None
+    correct_command: Optional[str] = None
+    session_id:      Optional[str] = "default"
+
+# ── feedback endpoint ──────────────────────────────────────────────────────────
+@app.post("/feedback")
+def process_feedback(req: FeedbackRequest):
+    result = feedback_engine.process(
+        original_text=req.original_text,
+        correct_area=req.correct_area,
+        correct_device=req.correct_device,
+        correct_command=req.correct_command,
+        session_id=req.session_id
+    )
+    nlp_engine.build_index()
+    return result
+    
+@app.post("/rebuild-index")
+def rebuild_index():
+    """Forza la ricostruzione dell'indice NLP."""
+    nlp_engine.build_index()
+    return {"status": "ok", "message": "Indice ricostruito."}
 
 # ── Endpoint principale ────────────────────────────────────────────────────────
 @app.post("/command", response_model=CommandResponse)
