@@ -161,6 +161,7 @@ services:
       - INFLUXDB_BUCKET=casa
       - OLLAMA_URL=http://ollama:11434
       - OLLAMA_MODEL=llama3.2:1b
+      - WHISPER_URL=http://whisper:9000
     volumes:
       - /opt/chaos/core/vicky:/app
     networks:
@@ -186,6 +187,17 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.vickyui.rule=Host(`ui.chaos.home`)"
       - "traefik.http.services.vickyui.loadbalancer.server.port=80"
+
+  whisper:
+    image: onerahmet/openai-whisper-asr-webservice:latest
+    container_name: whisper
+    restart: unless-stopped
+    environment:
+      - ASR_MODEL=small
+      - ASR_ENGINE=openai_whisper
+      - ASR_LANG=it
+    networks:
+      - chaos_net 
 
 networks:
   chaos_net:

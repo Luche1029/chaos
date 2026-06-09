@@ -16,7 +16,10 @@ from query_engine import QueryEngine
 from feedback_engine import FeedbackEngine
 from pattern_engine import PatternEngine
 
-
+import io
+import wave
+from fastapi import UploadFile, File
+from fastapi.responses import StreamingResponse
 
 app = FastAPI(title="Vicky AI", version="1.0.0")
 
@@ -38,7 +41,7 @@ HA_URL         = os.getenv("HA_URL",         "http://homeassistant:8123")
 HA_TOKEN       = os.getenv("HA_TOKEN",       "")
 OLLAMA_URL     = os.getenv("OLLAMA_URL",     "http://ollama:11434")
 OLLAMA_MODEL   = os.getenv("OLLAMA_MODEL",   "llama3.2")
-
+WHISPER_URL    = os.getenv("WHISPER_URL", "http://whisper:9000")
 # ── Wrapper Neo4jManager minimale ──────────────────────────────────────────────
 class Neo4jManager:
     """Wrapper minimale compatibile con NLPEngine e QueryEngine."""
@@ -169,6 +172,62 @@ def rebuild_index():
     """Forza la ricostruzione dell'indice NLP."""
     nlp_engine.build_index()
     return {"status": "ok", "message": "Indice ricostruito."}
+
+# ── STT — Speech to Text ───────────────────────────────────────────────────────
+@app.post("/stt")
+async def speech_to_text(audio: UploadFile = File(...)):
+    """Riceve un file audio e restituisce il testo trascritto da Whisper."""
+    try:
+        audio_bytes = await audio.read()
+        files = {"audio_file": (audio.filename, audio_bytes, audio.content_type)}
+        params = {"language": "it", "task": "transcribe"}
+        r = requests.post(f"{WHISPER_URL}/asr", files=files, params=params, timeout=30)
+        r.raise_for_status()
+        data = r.json()
+        text = data.get("text", "").strip()
+        return {"text": text, "success": bool(text)}
+    except Exception as e:
+        return {"text": "", "success": False, "error": str(e)}
+
+# ── TTS — Text to Speech ───────────────────────────────────────────────────────
+@app.post("/tts")
+def text_to_speech(req: dict):
+    """Genera audio WAV da testo usando Piper locale."""
+    import subprocess
+    import tempfile
+    import os
+
+    text = req.get("text", "")
+    if not text:
+        return {"error": "Testo vuoto"}
+
+    try:
+        with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp:
+            tmp_path = tmp.name
+
+        result = subprocess.run(
+            ["piper", "--model", "/app/piper-voices/it_IT-paola-medium.onnx",
+            "--output_file", tmp_path],
+            input=text.encode("utf-8"),
+            capture_output=True,
+            timeout=30
+        )
+
+        if result.returncode != 0:
+            return {"error": result.stderr.decode()}
+
+        with open(tmp_path, "rb") as f:
+            audio_data = f.read()
+
+        os.unlink(tmp_path)
+
+        return StreamingResponse(
+            io.BytesIO(audio_data),
+            media_type="audio/wav",
+            headers={"Content-Disposition": "inline; filename=response.wav"}
+        )
+    except Exception as e:
+        return {"error": str(e)}
 
 # ── Endpoint principale ────────────────────────────────────────────────────────
 @app.post("/command", response_model=CommandResponse)
