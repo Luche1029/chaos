@@ -173,7 +173,20 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.vicky.rule=Host(`vicky.chaos.home`)"
       - "traefik.http.services.vicky.loadbalancer.server.port=8000"
-      
+
+  vicky-ui:
+      build:
+        context: /opt/chaos/core/vicky-ui
+        dockerfile: Dockerfile
+      container_name: vicky-ui
+      restart: unless-stopped
+      networks:
+        - chaos_net
+      labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.vickyui.rule=Host(`ui.chaos.home`)"
+      - "traefik.http.services.vickyui.loadbalancer.server.port=80"
+
 networks:
   chaos_net:
     driver: bridge

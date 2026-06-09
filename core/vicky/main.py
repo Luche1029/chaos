@@ -20,6 +20,16 @@ from pattern_engine import PatternEngine
 
 app = FastAPI(title="Vicky AI", version="1.0.0")
 
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # ── Configurazione ─────────────────────────────────────────────────────────────
 NEO4J_URI      = os.getenv("NEO4J_URI",      "bolt://neo4j:7687")
 NEO4J_USER     = os.getenv("NEO4J_USER",     "neo4j")
