@@ -175,17 +175,42 @@ def rebuild_index():
 
 # ── STT — Speech to Text ───────────────────────────────────────────────────────
 @app.post("/stt")
-async def speech_to_text(audio: UploadFile = File(...)):
-    """Riceve un file audio e restituisce il testo trascritto da Whisper."""
+async def speech_to_text(audio_file: UploadFile = File(...)):
+    import tempfile, subprocess, os
     try:
-        audio_bytes = await audio.read()
-        files = {"audio_file": (audio.filename, audio_bytes, audio.content_type)}
+        audio_bytes = await audio_file.read()
+        
+        # Salva il file originale
+        with tempfile.NamedTemporaryFile(suffix=".webm", delete=False) as tmp_in:
+            tmp_in.write(audio_bytes)
+            tmp_in_path = tmp_in.name
+        
+        # Converti in wav con ffmpeg
+        tmp_out_path = tmp_in_path.replace(".webm", ".wav")
+        result = subprocess.run([
+            "ffmpeg", "-i", tmp_in_path,
+            "-ar", "16000", "-ac", "1", "-f", "wav",
+            tmp_out_path, "-y"
+        ], capture_output=True, timeout=15)
+        
+        os.unlink(tmp_in_path)
+        
+        if result.returncode != 0:
+            return {"text": "", "success": False, "error": "Conversione audio fallita"}
+        
+        # Invia il wav a Whisper
+        with open(tmp_out_path, "rb") as f:
+            wav_bytes = f.read()
+        os.unlink(tmp_out_path)
+        
+        files = {"audio_file": ("audio.wav", wav_bytes, "audio/wav")}
         params = {"language": "it", "task": "transcribe"}
         r = requests.post(f"{WHISPER_URL}/asr", files=files, params=params, timeout=30)
         r.raise_for_status()
         data = r.json()
         text = data.get("text", "").strip()
         return {"text": text, "success": bool(text)}
+        
     except Exception as e:
         return {"text": "", "success": False, "error": str(e)}
 

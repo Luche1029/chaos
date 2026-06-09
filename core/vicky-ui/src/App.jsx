@@ -174,18 +174,23 @@ export default function App() {
     }
   }
 
-  async function transcribeAudio(blob) {
+async function transcribeAudio(blob) {
     setLoading(true)
     try {
       const formData = new FormData()
-      formData.append("audio", blob, "recording.webm")
+      // Forza content type wav anche se il blob è webm
+      formData.append("audio_file", blob, "recording.wav")
+      
       const res = await fetch(`${VICKY_URL}/stt`, {
         method: "POST",
         body: formData,
       })
       const data = await res.json()
+      console.log("STT response:", data)
       if (data.text) {
         await sendText(data.text)
+      } else {
+        console.warn("STT: testo vuoto", data)
       }
     } catch (e) {
       console.error("STT error:", e)

@@ -7500,3 +7500,428 @@ running
 running
 [2026-06-10 00:15:31] grafana: 
 running
+[2026-06-10 00:21:11] vicky-ui: 
+running
+[2026-06-10 00:21:11] vicky-ai: 
+running
+[2026-06-10 00:21:11] piper: 
+running
+[2026-06-10 00:21:11] whisper: 
+running
+[2026-06-10 00:21:11] ollama: 
+running
+[2026-06-10 00:21:11] neo4j: 
+running
+[2026-06-10 00:21:11] n8n: 
+running
+[2026-06-10 00:21:11] homeassistant: 
+running
+[2026-06-10 00:21:11] nodered: healthy
+[2026-06-10 00:21:11] traefik: 
+running
+[2026-06-10 00:21:11] mosquitto: 
+running
+[2026-06-10 00:21:11] influxdb: 
+running
+[2026-06-10 00:21:11] grafana: 
+running
+[2026-06-10 00:26:31] vicky-ui: 
+running
+[2026-06-10 00:26:31] vicky-ai: 
+running
+[2026-06-10 00:26:31] piper: 
+running
+[2026-06-10 00:26:31] whisper: 
+running
+[2026-06-10 00:26:31] ollama: 
+running
+[2026-06-10 00:26:31] neo4j: 
+running
+[2026-06-10 00:26:31] n8n: 
+running
+[2026-06-10 00:26:31] homeassistant: 
+running
+[2026-06-10 00:26:31] nodered: healthy
+[2026-06-10 00:26:31] traefik: 
+running
+[2026-06-10 00:26:31] mosquitto: 
+running
+[2026-06-10 00:26:31] influxdb: 
+running
+[2026-06-10 00:26:31] grafana: 
+running
+[2026-06-10 00:31:32] vicky-ui: 
+running
+[2026-06-10 00:31:32] vicky-ai: 
+running
+[2026-06-10 00:31:32] piper: 
+running
+[2026-06-10 00:31:32] whisper: 
+running
+[2026-06-10 00:31:32] ollama: 
+running
+[2026-06-10 00:31:32] neo4j: 
+running
+[2026-06-10 00:31:32] n8n: 
+running
+[2026-06-10 00:31:32] homeassistant: 
+running
+[2026-06-10 00:31:32] nodered: healthy
+[2026-06-10 00:31:32] traefik: 
+running
+[2026-06-10 00:31:32] mosquitto: 
+running
+[2026-06-10 00:31:32] influxdb: 
+running
+[2026-06-10 00:31:32] grafana: 
+running
+[2026-06-10 00:37:06] vicky-ui: 
+running
+[2026-06-10 00:37:06] vicky-ai: 
+running
+[2026-06-10 00:37:06] piper: 
+running
+[2026-06-10 00:37:06] whisper: 
+running
+[2026-06-10 00:37:06] ollama: 
+running
+[2026-06-10 00:37:06] neo4j: 
+running
+[2026-06-10 00:37:06] n8n: 
+running
+[2026-06-10 00:37:06] homeassistant: 
+running
+[2026-06-10 00:37:06] nodered: healthy
+[2026-06-10 00:37:06] traefik: 
+running
+[2026-06-10 00:37:06] mosquitto: 
+running
+[2026-06-10 00:37:06] influxdb: 
+running
+[2026-06-10 00:37:06] grafana: 
+running
+[2026-06-10 00:42:10] vicky-ui: 
+running
+[2026-06-10 00:42:10] vicky-ai: 
+running
+[2026-06-10 00:42:10] piper: 
+running
+[2026-06-10 00:42:10] whisper: 
+running
+[2026-06-10 00:42:10] ollama: 
+running
+[2026-06-10 00:42:10] neo4j: 
+running
+[2026-06-10 00:42:10] n8n: 
+running
+[2026-06-10 00:42:10] homeassistant: 
+running
+[2026-06-10 00:42:10] nodered: healthy
+[2026-06-10 00:42:10] traefik: 
+running
+[2026-06-10 00:42:10] mosquitto: 
+running
+[2026-06-10 00:42:10] influxdb: 
+running
+[2026-06-10 00:42:10] grafana: 
+running
+[2026-06-10 00:47:31] vicky-ui: 
+running
+[2026-06-10 00:47:31] vicky-ai: 
+running
+[2026-06-10 00:47:31] piper: 
+running
+[2026-06-10 00:47:31] whisper: 
+running
+[2026-06-10 00:47:31] ollama: 
+running
+[2026-06-10 00:47:31] neo4j: 
+running
+[2026-06-10 00:47:31] n8n: 
+running
+[2026-06-10 00:47:31] homeassistant: 
+running
+[2026-06-10 00:47:31] nodered: healthy
+[2026-06-10 00:47:31] traefik: 
+running
+[2026-06-10 00:47:31] mosquitto: 
+running
+[2026-06-10 00:47:31] influxdb: 
+running
+[2026-06-10 00:47:31] grafana: 
+running
+[2026-06-10 00:52:31] vicky-ui: 
+running
+[2026-06-10 00:52:31] vicky-ai: 
+running
+[2026-06-10 00:52:31] piper: 
+running
+[2026-06-10 00:52:31] whisper: 
+running
+[2026-06-10 00:52:31] ollama: 
+running
+[2026-06-10 00:52:31] neo4j: 
+running
+[2026-06-10 00:52:31] n8n: 
+running
+[2026-06-10 00:52:31] homeassistant: 
+running
+[2026-06-10 00:52:31] nodered: healthy
+[2026-06-10 00:52:31] traefik: 
+running
+[2026-06-10 00:52:31] mosquitto: 
+running
+[2026-06-10 00:52:31] influxdb: 
+running
+[2026-06-10 00:52:31] grafana: 
+running
+[2026-06-10 00:57:41] vicky-ui: 
+running
+[2026-06-10 00:57:41] vicky-ai: 
+running
+[2026-06-10 00:57:41] piper: 
+running
+[2026-06-10 00:57:41] whisper: 
+running
+[2026-06-10 00:57:41] ollama: 
+running
+[2026-06-10 00:57:41] neo4j: 
+running
+[2026-06-10 00:57:41] n8n: 
+running
+[2026-06-10 00:57:41] homeassistant: 
+running
+[2026-06-10 00:57:41] nodered: healthy
+[2026-06-10 00:57:41] traefik: 
+running
+[2026-06-10 00:57:41] mosquitto: 
+running
+[2026-06-10 00:57:41] influxdb: 
+running
+[2026-06-10 00:57:41] grafana: 
+running
+[2026-06-10 01:03:01] vicky-ai: 
+running
+[2026-06-10 01:03:01] vicky-ui: 
+running
+[2026-06-10 01:03:01] piper: 
+running
+[2026-06-10 01:03:01] whisper: 
+running
+[2026-06-10 01:03:01] ollama: 
+running
+[2026-06-10 01:03:01] neo4j: 
+running
+[2026-06-10 01:03:01] n8n: 
+running
+[2026-06-10 01:03:01] homeassistant: 
+running
+[2026-06-10 01:03:01] nodered: healthy
+[2026-06-10 01:03:01] traefik: 
+running
+[2026-06-10 01:03:01] mosquitto: 
+running
+[2026-06-10 01:03:01] influxdb: 
+running
+[2026-06-10 01:03:01] grafana: 
+running
+[2026-06-10 01:08:31] vicky-ai: 
+running
+[2026-06-10 01:08:31] vicky-ui: 
+running
+[2026-06-10 01:08:31] piper: 
+running
+[2026-06-10 01:08:31] whisper: 
+running
+[2026-06-10 01:08:31] ollama: 
+running
+[2026-06-10 01:08:31] neo4j: 
+running
+[2026-06-10 01:08:31] n8n: 
+running
+[2026-06-10 01:08:31] homeassistant: 
+running
+[2026-06-10 01:08:31] nodered: healthy
+[2026-06-10 01:08:31] traefik: 
+running
+[2026-06-10 01:08:31] mosquitto: 
+running
+[2026-06-10 01:08:31] influxdb: 
+running
+[2026-06-10 01:08:31] grafana: 
+running
+[2026-06-10 01:13:31] vicky-ai: 
+running
+[2026-06-10 01:13:31] vicky-ui: 
+running
+[2026-06-10 01:13:31] piper: 
+running
+[2026-06-10 01:13:31] whisper: 
+running
+[2026-06-10 01:13:31] ollama: 
+running
+[2026-06-10 01:13:31] neo4j: 
+running
+[2026-06-10 01:13:31] n8n: 
+running
+[2026-06-10 01:13:31] homeassistant: 
+running
+[2026-06-10 01:13:31] nodered: healthy
+[2026-06-10 01:13:31] traefik: 
+running
+[2026-06-10 01:13:31] mosquitto: 
+running
+[2026-06-10 01:13:31] influxdb: 
+running
+[2026-06-10 01:13:31] grafana: 
+running
+[2026-06-10 01:19:15] vicky-ai: 
+running
+[2026-06-10 01:19:15] vicky-ui: 
+running
+[2026-06-10 01:19:15] piper: 
+running
+[2026-06-10 01:19:15] whisper: 
+running
+[2026-06-10 01:19:15] ollama: 
+running
+[2026-06-10 01:19:15] neo4j: 
+running
+[2026-06-10 01:19:15] n8n: 
+running
+[2026-06-10 01:19:15] homeassistant: 
+running
+[2026-06-10 01:19:15] nodered: healthy
+[2026-06-10 01:19:15] traefik: 
+running
+[2026-06-10 01:19:15] mosquitto: 
+running
+[2026-06-10 01:19:15] influxdb: 
+running
+[2026-06-10 01:19:15] grafana: 
+running
+[2026-06-10 01:24:31] vicky-ai: 
+running
+[2026-06-10 01:24:31] vicky-ui: 
+running
+[2026-06-10 01:24:31] piper: 
+running
+[2026-06-10 01:24:31] whisper: 
+running
+[2026-06-10 01:24:31] ollama: 
+running
+[2026-06-10 01:24:31] neo4j: 
+running
+[2026-06-10 01:24:31] n8n: 
+running
+[2026-06-10 01:24:31] homeassistant: 
+running
+[2026-06-10 01:24:31] nodered: healthy
+[2026-06-10 01:24:31] traefik: 
+running
+[2026-06-10 01:24:31] mosquitto: 
+running
+[2026-06-10 01:24:31] influxdb: 
+running
+[2026-06-10 01:24:31] grafana: 
+running
+[2026-06-10 01:29:32] vicky-ai: 
+running
+[2026-06-10 01:29:32] vicky-ui: 
+running
+[2026-06-10 01:29:32] piper: 
+running
+[2026-06-10 01:29:32] whisper: 
+running
+[2026-06-10 01:29:32] ollama: 
+running
+[2026-06-10 01:29:32] neo4j: 
+running
+[2026-06-10 01:29:32] n8n: 
+running
+[2026-06-10 01:29:32] homeassistant: 
+running
+[2026-06-10 01:29:32] nodered: healthy
+[2026-06-10 01:29:32] traefik: 
+running
+[2026-06-10 01:29:32] mosquitto: 
+running
+[2026-06-10 01:29:32] influxdb: 
+running
+[2026-06-10 01:29:32] grafana: 
+running
+[2026-06-10 01:34:41] vicky-ai: 
+running
+[2026-06-10 01:34:41] vicky-ui: 
+running
+[2026-06-10 01:34:41] piper: 
+running
+[2026-06-10 01:34:41] whisper: 
+running
+[2026-06-10 01:34:41] ollama: 
+running
+[2026-06-10 01:34:41] neo4j: 
+running
+[2026-06-10 01:34:41] n8n: 
+running
+[2026-06-10 01:34:41] homeassistant: 
+running
+[2026-06-10 01:34:41] nodered: healthy
+[2026-06-10 01:34:41] traefik: 
+running
+[2026-06-10 01:34:41] mosquitto: 
+running
+[2026-06-10 01:34:41] influxdb: 
+running
+[2026-06-10 01:34:41] grafana: 
+running
+[2026-06-10 01:40:31] vicky-ai: 
+running
+[2026-06-10 01:40:31] vicky-ui: 
+running
+[2026-06-10 01:40:31] piper: 
+running
+[2026-06-10 01:40:31] whisper: 
+running
+[2026-06-10 01:40:31] ollama: 
+running
+[2026-06-10 01:40:31] neo4j: 
+running
+[2026-06-10 01:40:31] n8n: 
+running
+[2026-06-10 01:40:31] homeassistant: 
+running
+[2026-06-10 01:40:31] nodered: healthy
+[2026-06-10 01:40:31] traefik: 
+running
+[2026-06-10 01:40:31] mosquitto: 
+running
+[2026-06-10 01:40:31] influxdb: 
+running
+[2026-06-10 01:40:31] grafana: 
+running
+[2026-06-10 01:45:34] vicky-ai: 
+running
+[2026-06-10 01:45:34] vicky-ui: 
+running
+[2026-06-10 01:45:34] piper: 
+running
+[2026-06-10 01:45:34] whisper: 
+running
+[2026-06-10 01:45:34] ollama: 
+running
+[2026-06-10 01:45:34] neo4j: 
+running
+[2026-06-10 01:45:34] n8n: 
+running
+[2026-06-10 01:45:34] homeassistant: 
+running
+[2026-06-10 01:45:34] nodered: healthy
+[2026-06-10 01:45:34] traefik: 
+running
+[2026-06-10 01:45:34] mosquitto: 
+running
+[2026-06-10 01:45:34] influxdb: 
+running
+[2026-06-10 01:45:34] grafana: 
+running
