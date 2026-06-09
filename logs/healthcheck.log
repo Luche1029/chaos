@@ -4286,3 +4286,24 @@ running
 running
 [2026-06-09 13:01:31] grafana: 
 running
+[2026-06-09 13:07:31] vicky-ai: 
+running
+[2026-06-09 13:07:31] vicky-ui: 
+running
+[2026-06-09 13:07:31] ollama: 
+running
+[2026-06-09 13:07:31] neo4j: 
+running
+[2026-06-09 13:07:31] n8n: 
+running
+[2026-06-09 13:07:31] homeassistant: 
+running
+[2026-06-09 13:07:31] nodered: healthy
+[2026-06-09 13:07:31] traefik: 
+running
+[2026-06-09 13:07:31] mosquitto: 
+running
+[2026-06-09 13:07:31] influxdb: 
+running
+[2026-06-09 13:07:31] grafana: 
+running
