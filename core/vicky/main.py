@@ -42,6 +42,8 @@ HA_TOKEN       = os.getenv("HA_TOKEN",       "")
 OLLAMA_URL     = os.getenv("OLLAMA_URL",     "http://ollama:11434")
 OLLAMA_MODEL   = os.getenv("OLLAMA_MODEL",   "llama3.2")
 WHISPER_URL    = os.getenv("WHISPER_URL", "http://whisper:9000")
+OWWW_URL       = os.getenv("OWWW_URL", "http://openwakeword:10400")
+
 # ── Wrapper Neo4jManager minimale ──────────────────────────────────────────────
 class Neo4jManager:
     """Wrapper minimale compatibile con NLPEngine e QueryEngine."""
@@ -227,7 +229,7 @@ async def speech_to_text(audio_file: UploadFile = File(...)):
             text = r.text.strip()
 
         return {"text": text, "success": bool(text)}
-        
+
 # ── TTS — Text to Speech ───────────────────────────────────────────────────────
 @app.post("/tts")
 def text_to_speech(req: dict):
@@ -267,6 +269,60 @@ def text_to_speech(req: dict):
         )
     except Exception as e:
         return {"error": str(e)}
+
+# ── Trigger Word ────────────────────────────────────────────────────────
+@app.post("/wake-detect")
+async def wake_detect(audio_file: UploadFile = File(...)):
+    """Rileva wake word usando Whisper — cerca 'vicky' nel testo trascritto."""
+    import tempfile, subprocess, os
+    try:
+        audio_bytes = await audio_file.read()
+
+        with tempfile.NamedTemporaryFile(suffix=".webm", delete=False) as tmp_in:
+            tmp_in.write(audio_bytes)
+            tmp_in_path = tmp_in.name
+
+        tmp_out_path = tmp_in_path.replace(".webm", ".wav")
+        result = subprocess.run([
+            "ffmpeg", "-i", tmp_in_path,
+            "-ar", "16000", "-ac", "1", "-f", "wav",
+            tmp_out_path, "-y"
+        ], capture_output=True, timeout=10)
+
+        os.unlink(tmp_in_path)
+
+        if result.returncode != 0:
+            return {"detected": False}
+
+        with open(tmp_out_path, "rb") as f:
+            wav_bytes = f.read()
+        os.unlink(tmp_out_path)
+
+        # Usa Whisper per trascrivere
+        files = {"audio_file": ("audio.wav", wav_bytes, "audio/wav")}
+        params = {"language": "it", "task": "transcribe"}
+        r = requests.post(f"{WHISPER_URL}/asr", files=files, params=params, timeout=30)
+
+        if r.status_code != 200:
+            return {"detected": False}
+
+        try:
+            data = r.json()
+            text = data.get("text", "").strip().lower()
+        except Exception:
+            text = r.text.strip().lower()
+
+        print(f"[WakeDetect] Trascritto: '{text}'")
+
+        # Cerca wake word
+        wake_words = ["vicky", "ehi vicky", "hey vicky", "ok vicky", "ciao vicky"]
+        detected = any(w in text for w in wake_words)
+
+        return {"detected": detected, "text": text}
+
+    except Exception as e:
+        print(f"[WakeDetect] Errore: {e}")
+        return {"detected": False, "error": str(e)}
 
 # ── Endpoint principale ────────────────────────────────────────────────────────
 @app.post("/command", response_model=CommandResponse)

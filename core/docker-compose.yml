@@ -162,6 +162,7 @@ services:
       - OLLAMA_URL=http://ollama:11434
       - OLLAMA_MODEL=llama3.2:1b
       - WHISPER_URL=http://whisper:9000
+      - OWWW_URL=http://openwakeword:10400
     volumes:
       - /opt/chaos/core/vicky:/app
     networks:
@@ -198,6 +199,14 @@ services:
       - ASR_LANG=it
     networks:
       - chaos_net 
+
+  openwakeword:
+      image: rhasspy/wyoming-openwakeword:latest
+      container_name: openwakeword
+      restart: unless-stopped
+      command: --preload-model 'alexa'
+      networks:
+        - chaos_net
 
 networks:
   chaos_net:
