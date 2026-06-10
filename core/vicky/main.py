@@ -179,13 +179,12 @@ async def speech_to_text(audio_file: UploadFile = File(...)):
     import tempfile, subprocess, os
     try:
         audio_bytes = await audio_file.read()
+        print(f"[STT] Ricevuto: {len(audio_bytes)} bytes, type: {audio_file.content_type}")
         
-        # Salva il file originale
         with tempfile.NamedTemporaryFile(suffix=".webm", delete=False) as tmp_in:
             tmp_in.write(audio_bytes)
             tmp_in_path = tmp_in.name
         
-        # Converti in wav con ffmpeg
         tmp_out_path = tmp_in_path.replace(".webm", ".wav")
         result = subprocess.run([
             "ffmpeg", "-i", tmp_in_path,
@@ -194,26 +193,41 @@ async def speech_to_text(audio_file: UploadFile = File(...)):
         ], capture_output=True, timeout=15)
         
         os.unlink(tmp_in_path)
+        print(f"[STT] ffmpeg returncode: {result.returncode}")
+        print(f"[STT] ffmpeg stderr: {result.stderr.decode()[-200:]}")
         
         if result.returncode != 0:
             return {"text": "", "success": False, "error": "Conversione audio fallita"}
         
-        # Invia il wav a Whisper
         with open(tmp_out_path, "rb") as f:
             wav_bytes = f.read()
         os.unlink(tmp_out_path)
+        print(f"[STT] WAV generato: {len(wav_bytes)} bytes")
         
         files = {"audio_file": ("audio.wav", wav_bytes, "audio/wav")}
         params = {"language": "it", "task": "transcribe"}
-        r = requests.post(f"{WHISPER_URL}/asr", files=files, params=params, timeout=30)
+        r = requests.post(f"{WHISPER_URL}/asr", files=files, params=params, timeout=60)
+        print(f"[STT] Whisper status: {r.status_code}, body: {r.text[:200]}")
         r.raise_for_status()
         data = r.json()
         text = data.get("text", "").strip()
         return {"text": text, "success": bool(text)}
         
     except Exception as e:
-        return {"text": "", "success": False, "error": str(e)}
+        import traceback
+        print(f"[STT] Whisper status: {r.status_code}, body: {r.text[:200]}")
+        r.raise_for_status()
 
+        # Whisper può rispondere con testo plain o JSON
+        try:
+            data = r.json()
+            text = data.get("text", "").strip()
+        except Exception:
+            # Risposta testo plain
+            text = r.text.strip()
+
+        return {"text": text, "success": bool(text)}
+        
 # ── TTS — Text to Speech ───────────────────────────────────────────────────────
 @app.post("/tts")
 def text_to_speech(req: dict):

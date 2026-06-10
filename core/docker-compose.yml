@@ -193,7 +193,7 @@ services:
     container_name: whisper
     restart: unless-stopped
     environment:
-      - ASR_MODEL=small
+      - ASR_MODEL=tiny
       - ASR_ENGINE=openai_whisper
       - ASR_LANG=it
     networks:

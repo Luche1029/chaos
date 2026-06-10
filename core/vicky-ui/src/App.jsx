@@ -175,6 +175,8 @@ export default function App() {
   }
 
 async function transcribeAudio(blob) {
+    console.log("Audio blob:", blob.size, "bytes", blob.type)
+
     setLoading(true)
     try {
       const formData = new FormData()
