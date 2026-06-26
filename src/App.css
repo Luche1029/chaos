@@ -1,0 +1,160 @@
+:root {
+  --chaos-bg: #0d1117;
+  --chaos-panel: #161b22;
+  --chaos-accent: #58a6ff;
+  --chaos-text: #e6edf3;
+}
+
+html, body, #root {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background:var(--chaos-bg);
+  color: var(--chaos-text);
+  font-family: system-ui, sans-serif;
+}
+
+.layout-chaos {
+  display: grid;
+  width:100vw;
+  grid-template-columns: 60% 40%;       /* Lovelace grande a sinistra */
+  grid-template-rows: 1.3fr 1fr;        /* Vicky+chat un po' più alta dell'info */
+  grid-template-areas:
+    "lovelace vickychat"
+    "lovelace info";
+  height: 100vh;
+  gap: 8px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* Modalità Electron — solo Lovelace + Info, niente avatar */
+.electron-mode {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.3fr 1fr;
+  grid-template-areas:
+    "lovelace"
+    "info";
+}
+
+.zone-lovelace-main { grid-area: lovelace; background: var(--chaos-panel); border-radius: 12px; overflow: hidden; }
+.zone-vicky-chat    { grid-area: vickychat; background: var(--chaos-panel); border-radius: 12px; overflow: hidden; position: relative; }
+.zone-info          { grid-area: info; background: var(--chaos-panel); border-radius: 12px; position: relative; cursor: pointer; outline: 2px solid transparent; transition: outline-color .15s; }
+.zone-info:hover    { outline-color: var(--chaos-accent); }
+
+/* Vicky riempie la zona, la chat è un overlay in basso */
+.zone-vicky-chat .vicky-avatar,
+.zone-vicky-chat .vicky-canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+.zone-vicky-chat .chat {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  height: auto;                          /* override del 100% precedente */
+  padding-top: 36px;
+  background: linear-gradient(to top, rgba(13,17,23,0.92), rgba(13,17,23,0.4) 70%, transparent);
+}
+.zone-vicky-chat .chat-log {
+  flex: none;                            /* override del flex:1 */
+  max-height: 110px; overflow-y: auto;
+}
+.vicky-avatar, .vicky-canvas { width: 100%; height: 100%; }
+
+.vicky-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.vicky-loading-bar {
+  width: 60%;
+  height: 6px;
+  background: #21262d;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.vicky-loading-fill {
+  height: 100%;
+  background: var(--chaos-accent);
+  transition: width 0.2s;
+}
+
+.zone-chat.panel,
+.zone-lovelace.panel { cursor: pointer; }
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  z-index: 100;
+}
+
+.panel-expanded {
+  position: fixed;
+  top: 5%;
+  bottom: 5%;
+  left: min(5%, 40px);
+  /*right: 0;*/
+  width: min(90%, var(--app-in-w));
+  margin-inline: auto;
+  z-index: 101;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  cursor: default;
+}
+
+.panel-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  background: var(--chaos-panel);
+  color: var(--chaos-text);
+  cursor: pointer;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  z-index: 100;
+  animation: backdrop-in 0.26s ease;
+}
+
+.chat { display: flex; flex-direction: column; height: 100%; }
+.chat-log { flex: 1; overflow-y: auto; padding: 16px; }
+.chat-subtitle { font-size: 1.1rem; line-height: 1.4; }
+
+.chat-input { display: flex; gap: 8px; padding: 12px; }
+.chat-input input {
+  flex: 1;
+  min-width: 0;            /* lascia spazio al bottone in flexbox */
+  padding: 10px 12px; border-radius: 8px;
+  border: 1px solid #30363d; background: #0d1117; color: var(--chaos-text);
+}
+.chat-input button {
+  padding: 10px 16px; border-radius: 8px; border: none;
+  background: var(--chaos-accent); color: #0d1117; font-weight: 600; cursor: pointer;
+}
+.chat-input button:disabled { opacity: 0.5; cursor: default; }
+
+.chat-input .mic {
+  padding: 10px 14px; border-radius: 8px; border: 1px solid #30363d;
+  background: #0d1117; color: var(--chaos-text); cursor: pointer;
+}
+.chat-input .mic.recording { background: #da3633; color: #fff; border-color: #da3633; }
+
+.lovelace-frame { width: 100%; height: 100%; border: 0; }
+
+@keyframes backdrop-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
