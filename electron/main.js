@@ -23,7 +23,6 @@ function createWindow() {
 
   // Niente menu
   win.setMenu(null)
-
 }
 
 app.whenReady().then(() => {
