@@ -41,10 +41,19 @@ export async function transcribe(blob) {
 }
 
 export async function getHistory(limit = 50, days = 7) {
-  const res = await fetch(`${BASE}/history?limit=${limit}&days=${days}`);
-  if (!res.ok) throw new Error(`/history ${res.status}`);
-  const data = await res.json();
-  return data.items;
+  for (let i = 0; i < 3; i++) {
+    try {
+      const res = await fetch(`${BASE}/history?limit=${limit}&days=${days}`);
+      if (res.ok) {
+        const data = await res.json();
+        return data.items;
+      }
+    } catch (e) {
+      // retry
+    }
+    await new Promise(r => setTimeout(r, 2000));
+  }
+  throw new Error(`/history non raggiungibile`);
 }
 
 export async function sendWakeSample(blob, label = "vicky") {

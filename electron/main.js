@@ -6,7 +6,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 function createWindow() {
   const win = new BrowserWindow({
-    fullscreen: true,
+    fullscreen: false,
   width: 1920,
   height: 1080,
     frame: false,
@@ -23,6 +23,8 @@ function createWindow() {
 
   // Niente menu
   win.setMenu(null)
+
+  //win.webContents.openDevTools()
 }
 
 app.whenReady().then(() => {

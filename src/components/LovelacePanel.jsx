@@ -1,4 +1,4 @@
-const HA_DASHBOARD = "http://ha.chaos.home/dashboard-chaoschaos/0?kiosk";
+const HA_DASHBOARD = "http://ha.chaos.home/lovelace/0?kiosk";
 
 export default function LovelacePanel() {
   return (
